@@ -119,6 +119,7 @@ struct DisplayListNode
     Mtx *transform;
     void *displayList;
     struct DisplayListNode *next;
+    f32 dist;
 };
 
 /** GraphNode that manages the 8 top-level display lists that will be drawn

@@ -137,7 +137,36 @@ u16 gAreaUpdateCounter = 0;
 LookAt lookAt;
 #endif
 
+#define SORT_ASCENDING  0
+#define SORT_DESCENDING 1
+
 u8 ucodeTestSwitch = 1;
+
+void sort_displaylist_distance(struct DisplayListNode *currList, s32 order)
+{
+    struct DisplayListNode *tempList = NULL;
+    struct DisplayListNode *tempNext = NULL;
+    struct DisplayListNode *tempFirst = currList;
+
+    while(currList != NULL)
+    {
+        tempList = currList;
+        while (tempList->next != NULL)
+        {
+            s32 check = order ? tempList->dist > tempList->next->dist : tempList->dist < tempList->next->dist;
+            if (check)
+            {
+                tempNext = tempList->next;
+                tempList->next = tempNext->next;
+                tempNext->next = tempList;
+                tempList = tempNext;
+            }
+            tempList = tempList->next;
+        }
+        currList = currList->next;
+    }
+    currList = tempFirst;
+}
 
 /**
  * Process a master list node. This has been modified, so now it runs twice, for each microcode.
@@ -192,6 +221,7 @@ static void geo_process_master_list_sub(struct GraphNodeMasterList *node) {
     Mtx lMtx;
     guLookAtReflect(&lMtx, &lookAt, 0, 0, 0, /* eye */ 0, 0, 1, /* at */ 1, 0, 0 /* up */);
 #endif
+
     for (; i < GFX_NUM_MASTER_LISTS; i++)
     {
 #ifdef F3DZEX_GBI_2
@@ -200,6 +230,10 @@ static void geo_process_master_list_sub(struct GraphNodeMasterList *node) {
 #endif
         if ((currList = node->listHeads[j][i]) != NULL)
         {
+            if (j == 0) //Only do this for displaylists in pass 0 (F3DZEX)
+                sort_displaylist_distance(currList, SORT_ASCENDING);
+            if (j == 1 && i >= 5) //Distance sort layers 5 to 7 in the F3DLX2.Rej pass.
+                sort_displaylist_distance(currList, SORT_ASCENDING);
             gDPSetRenderMode(gDisplayListHead++, modeList->modes[i], mode2List->modes[i]);
             while (currList != NULL)
             {
@@ -262,6 +296,8 @@ static void geo_append_display_list(void *displayList, s32 layer)
         listNode->transform = gMatStackFixed[gMatStackIndex];
         listNode->displayList = displayList;
         listNode->next = 0;
+        if (index == 0)
+            listNode->dist = -gMatStack[gMatStackIndex][3][2];
         if (gCurGraphNodeMasterList->listHeads[index][layer] == 0)
         {
             gCurGraphNodeMasterList->listHeads[index][layer] = listNode;
