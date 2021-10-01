@@ -29,10 +29,6 @@ const MacroObject jrb_seg7_area_1_macro_objs[] = {
     MACRO_OBJECT(/*preset*/ macro_red_coin,                    /*yaw*/   0, /*pos*/  5400,  2200,  1300),
     MACRO_OBJECT_WITH_BEH_PARAM(/*preset*/ macro_wooden_signpost,             /*yaw*/ 180, /*pos*/  -900, -2966, -2200, /*behParam*/ DIALOG_073),
     MACRO_OBJECT_WITH_BEH_PARAM(/*preset*/ macro_wooden_signpost,             /*yaw*/  80, /*pos*/ -2552,  1331,  6573, /*behParam*/ DIALOG_051),
-    MACRO_OBJECT(/*preset*/ macro_clam_shell,                  /*yaw*/ 315, /*pos*/ -1800, -1023,  3500),
-    MACRO_OBJECT(/*preset*/ macro_clam_shell,                  /*yaw*/ 225, /*pos*/  -480,   512,  5980),
-    MACRO_OBJECT(/*preset*/ macro_clam_shell,                  /*yaw*/ 270, /*pos*/   700,  -511,  4250),
-    MACRO_OBJECT(/*preset*/ macro_clam_shell,                  /*yaw*/  90, /*pos*/  3600, -5119,  3200),
     MACRO_OBJECT(/*preset*/ macro_fish_group,                  /*yaw*/   0, /*pos*/ -2523,  -246,  4676),
     MACRO_OBJECT(/*preset*/ macro_fish_group,                  /*yaw*/   0, /*pos*/  5876, -4738,  3476),
     MACRO_OBJECT(/*preset*/ macro_blue_coin_switch,            /*yaw*/   0, /*pos*/  6011, -2966, -5511),
@@ -60,7 +56,6 @@ const MacroObject jrb_seg7_area_1_macro_objs[] = {
     MACRO_OBJECT(/*preset*/ macro_box_three_coins,             /*yaw*/   0, /*pos*/ -5800,  1340,  -750),
     MACRO_OBJECT(/*preset*/ macro_1up,                         /*yaw*/   0, /*pos*/   670,  3000,  3315),
     MACRO_OBJECT(/*preset*/ macro_koopa_shell_underwater,      /*yaw*/   0, /*pos*/ -1480, -1000,  4820),
-    MACRO_OBJECT(/*preset*/ macro_clam_shell,                  /*yaw*/ 180, /*pos*/ -1480, -1040,  4820),
     MACRO_OBJECT_WITH_BEH_PARAM(/*preset*/ macro_wooden_signpost,             /*yaw*/   0, /*pos*/  5290, -2966, -4740, /*behParam*/ DIALOG_169),
     MACRO_OBJECT_END(),
 };

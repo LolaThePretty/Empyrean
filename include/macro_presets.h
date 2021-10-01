@@ -48,7 +48,6 @@ struct MacroPreset MacroObjectPresets[] = {
     {bhvGoombaTripletSpawner, MODEL_NONE, 0},
     {bhvGoombaTripletSpawner, MODEL_NONE, 8}, // unused
     {bhvSignOnWall, MODEL_NONE, 0},
-    {bhvChuckya, MODEL_CHUCKYA, 0},
     {bhvCannon, MODEL_CANNON_BASE, 0},
     {bhvGoomba, MODEL_GOOMBA, 0},
     {bhvHomingAmp, MODEL_AMP, 0},
@@ -169,7 +168,6 @@ struct MacroPreset MacroObjectPresets[] = {
     {bhvMontyMoleHole, MODEL_DL_MONTY_MOLE_HOLE, 0},
     {bhvFlyGuy, MODEL_FLYGUY, 0},
     {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
-    {bhvWigglerHead, MODEL_WIGGLER_HEAD, 0}, // unused
     {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
     {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
     {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
@@ -256,7 +254,6 @@ struct MacroPreset MacroObjectPresets[] = {
     {bhvJetStreamRingSpawner, MODEL_WATER_RING, 0}, // unused
     {bhvJetStreamRingSpawner, MODEL_WATER_RING, 0}, // unused
     {bhvSkeeter, MODEL_SKEETER, 0},
-    {bhvClamShell, MODEL_CLAM_SHELL, 0},
     {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
     {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
     {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
@@ -302,8 +299,6 @@ struct MacroPreset MacroObjectPresets[] = {
     {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
     {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
     {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
-    {bhvSwoop, MODEL_SWOOP, 0},
-    {bhvSwoop, MODEL_SWOOP, 1},
     {bhvMrI, MODEL_NONE, 0},
     {bhvScuttlebugSpawn, MODEL_NONE, 0},
     {bhvScuttlebug, MODEL_SCUTTLEBUG, 0},
@@ -378,7 +373,11 @@ struct MacroPreset MacroObjectPresets[] = {
     {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
     {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
     {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
-    {bhvYellowCoin, MODEL_YELLOW_COIN, 0}
+    {bhvYellowCoin, MODEL_YELLOW_COIN, 0},
+    {bhvHubElevator, MODEL_HUB_ELEVATOR, 0},
+    {bhvShipWreck, MODEL_SHIP_WRECK, 0},
+    {bhvRainbowMagicOrb, MODEL_RAINBOW_MAGIC_ORB, 0},
+    {bhvRainbowMagicPlatform, MODEL_RAINBOW_MAGIC_PLATFORM, 0}
 };
 
 #endif // MACRO_PRESETS_H

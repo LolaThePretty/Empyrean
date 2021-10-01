@@ -11,6 +11,10 @@
 
 #include "config.h"
 
+// V CUSTOM V
+
+//extern f32 HubRescueCutscene;
+
 static s16 sMovingSandSpeeds[] = { 12, 8, 4, 0 };
 
 struct Surface gWaterSurfacePseudoFloor = {
@@ -711,7 +715,10 @@ s32 perform_air_step(struct MarioState *m, u32 stepArg) {
     m->terrainSoundAddend = mario_get_terrain_sound_addend(m);
 
     if (m->action != ACT_FLYING) {
-        apply_gravity(m);
+        // V CUSTOM V
+        //if (HubRescueCutscene == 0.0f) {
+            apply_gravity(m);
+        //}
     }
     apply_vertical_wind(m);
 

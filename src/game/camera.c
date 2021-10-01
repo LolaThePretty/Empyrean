@@ -3188,9 +3188,6 @@ void init_camera(struct Camera *c) {
         case AREA_CCM_SLIDE:
             marioOffset[2] = -300.f;
             break;
-        case AREA_THI_WIGGLER:
-            marioOffset[2] = -300.f;
-            break;
         case AREA_SL_IGLOO:
             marioOffset[2] = -300.f;
             break;
@@ -5657,9 +5654,7 @@ struct CameraTrigger sCamRR[] = {
  * to free_roam when Mario is not walking up the tower.
  */
 struct CameraTrigger sCamBOB[] = {
-    {  1, cam_bob_tower, 2468, 2720, -4608, 3263, 1696, 3072, 0 },
-    { -1, cam_bob_default_free_roam, 0, 0, 0, 0, 0, 0, 0 },
-    NULL_TRIGGER
+	NULL_TRIGGER
 };
 
 /**
@@ -5687,43 +5682,7 @@ struct CameraTrigger sCamCCM[] = {
  * and one trigger that starts the enter pool cutscene when Mario enters HMC.
  */
 struct CameraTrigger sCamCastle[] = {
-    { 1, cam_castle_close_mode, -1100, 657, -1346, 300, 150, 300, 0 },
-    { 1, cam_castle_enter_lobby, -1099, 657, -803, 300, 150, 300, 0 },
-    { 1, cam_castle_close_mode, -2304, -264, -4072, 140, 150, 140, 0 },
-    { 1, cam_castle_close_mode, -2304, 145, -1344, 140, 150, 140, 0 },
-    { 1, cam_castle_enter_lobby, -2304, 145, -802, 140, 150, 140, 0 },
-    //! Sets the camera mode when leaving secret aquarium
-    { 1, cam_castle_close_mode, 2816, 1200, -256, 100, 100, 100, 0 },
-    { 1, cam_castle_close_mode, 256, -161, -4226, 140, 150, 140, 0 },
-    { 1, cam_castle_close_mode, 256, 145, -1344, 140, 150, 140, 0 },
-    { 1, cam_castle_enter_lobby, 256, 145, -802, 140, 150, 140, 0 },
-    { 1, cam_castle_close_mode, -1023, 44, -4870, 140, 150, 140, 0 },
-    { 1, cam_castle_close_mode, -459, 145, -1020, 140, 150, 140, 0x6000 },
-    { 1, cam_castle_enter_lobby, -85, 145, -627, 140, 150, 140, 0 },
-    { 1, cam_castle_close_mode, -1589, 145, -1020, 140, 150, 140, -0x6000 },
-    { 1, cam_castle_enter_lobby, -1963, 145, -627, 140, 150, 140, 0 },
-    { 1, cam_castle_leave_lobby_sliding_door, -2838, 657, -1659, 200, 150, 150, 0x2000 },
-    { 1, cam_castle_enter_lobby_sliding_door, -2319, 512, -1266, 300, 150, 300, 0x2000 },
-    { 1, cam_castle_close_mode, 844, 759, -1657, 40, 150, 40, -0x2000 },
-    { 1, cam_castle_enter_lobby, 442, 759, -1292, 140, 150, 140, -0x2000 },
-    { 2, cam_castle_enter_spiral_stairs, -1000, 657, 1740, 200, 300, 200, 0 },
-    { 2, cam_castle_enter_spiral_stairs, -996, 1348, 1814, 200, 300, 200, 0 },
-    { 2, cam_castle_close_mode, -946, 657, 2721, 50, 150, 50, 0 },
-    { 2, cam_castle_close_mode, -996, 1348, 907, 50, 150, 50, 0 },
-    { 2, cam_castle_close_mode, -997, 1348, 1450, 140, 150, 140, 0 },
-    { 1, cam_castle_close_mode, -4942, 452, -461, 140, 150, 140, 0x4000 },
-    { 1, cam_castle_close_mode, -3393, 350, -793, 140, 150, 140, 0x4000 },
-    { 1, cam_castle_enter_lobby, -2851, 350, -792, 140, 150, 140, 0x4000 },
-    { 1, cam_castle_enter_lobby, 803, 350, -228, 140, 150, 140, -0x4000 },
-    //! Duplicate camera trigger outside JRB door
-    { 1, cam_castle_enter_lobby, 803, 350, -228, 140, 150, 140, -0x4000 },
-    { 1, cam_castle_close_mode, 1345, 350, -229, 140, 150, 140, 0x4000 },
-    { 1, cam_castle_close_mode, -946, -929, 622, 300, 150, 300, 0 },
-    { 2, cam_castle_look_upstairs, -205, 1456, 2508, 210, 928, 718, 0 },
-    { 1, cam_castle_basement_look_downstairs, -1027, -587, -718, 318, 486, 577, 0 },
-    { 1, cam_castle_lobby_entrance, -1023, 376, 1830, 300, 400, 300, 0 },
-    { 3, cam_castle_hmc_start_pool_cutscene, 2485, -1689, -2659, 600, 50, 600, 0 },
-    NULL_TRIGGER
+	NULL_TRIGGER
 };
 
 /**
@@ -9061,8 +9020,6 @@ extern struct CutsceneSplinePoint sBbhCreditsSplinePositions[];
 extern struct CutsceneSplinePoint sBbhCreditsSplineFocus[];
 extern struct CutsceneSplinePoint sHmcCreditsSplinePositions[];
 extern struct CutsceneSplinePoint sHmcCreditsSplineFocus[];
-extern struct CutsceneSplinePoint sThiWigglerCreditsSplinePositions[];
-extern struct CutsceneSplinePoint sThiWigglerCreditsSplineFocus[];
 extern struct CutsceneSplinePoint sVolcanoCreditsSplinePositions[];
 extern struct CutsceneSplinePoint sVolcanoCreditsSplineFocus[];
 extern struct CutsceneSplinePoint sSslCreditsSplinePositions[];
@@ -9105,7 +9062,6 @@ void cutscene_credits(struct Camera *c) {
         case AREA_CCM_SLIDE:     pos = sCcmSlideCreditsSplinePositions;   focus = sCcmSlideCreditsSplineFocus;   break;
         case AREA_BBH:           pos = sBbhCreditsSplinePositions;        focus = sBbhCreditsSplineFocus;        break;
         case AREA_HMC:           pos = sHmcCreditsSplinePositions;        focus = sHmcCreditsSplineFocus;        break;
-        case AREA_THI_WIGGLER:   pos = sThiWigglerCreditsSplinePositions; focus = sThiWigglerCreditsSplineFocus; break;
         case AREA_LLL_VOLCANO:   pos = sVolcanoCreditsSplinePositions;    focus = sVolcanoCreditsSplineFocus;    break;
         case AREA_SSL_OUTSIDE:   pos = sSslCreditsSplinePositions;        focus = sSslCreditsSplineFocus;        break;
         case AREA_DDD_WHIRLPOOL: pos = sDddCreditsSplinePositions;        focus = sDddCreditsSplineFocus;        break;
@@ -10016,26 +9972,26 @@ u8 sDanceCutsceneIndexTable[][4] = {
  * and if the result is non-zero, the camera will zoom out.
  */
 u8 sZoomOutAreaMasks[] = {
-    ZOOMOUT_AREA_MASK(0,0,0,0, 0,0,0,0), // Unused         | Unused
-    ZOOMOUT_AREA_MASK(0,0,0,0, 0,0,0,0), // Unused         | Unused
-    ZOOMOUT_AREA_MASK(0,0,0,0, 1,0,0,0), // BBH            | CCM
-    ZOOMOUT_AREA_MASK(0,0,0,0, 0,0,0,0), // CASTLE_INSIDE  | HMC
-    ZOOMOUT_AREA_MASK(1,0,0,0, 1,0,0,0), // SSL            | BOB
-    ZOOMOUT_AREA_MASK(1,0,0,0, 1,0,0,0), // SL             | WDW
-    ZOOMOUT_AREA_MASK(0,0,0,0, 1,1,0,0), // JRB            | THI
-    ZOOMOUT_AREA_MASK(0,0,0,0, 1,0,0,0), // TTC            | RR
-    ZOOMOUT_AREA_MASK(1,0,0,0, 1,0,0,0), // CASTLE_GROUNDS | BITDW
-    ZOOMOUT_AREA_MASK(0,0,0,0, 1,0,0,0), // VCUTM          | BITFS
-    ZOOMOUT_AREA_MASK(0,0,0,0, 1,0,0,0), // SA             | BITS
-    ZOOMOUT_AREA_MASK(1,0,0,0, 0,0,0,0), // LLL            | DDD
-    ZOOMOUT_AREA_MASK(1,0,0,0, 0,0,0,0), // WF             | ENDING
-    ZOOMOUT_AREA_MASK(0,0,0,0, 0,0,0,0), // COURTYARD      | PSS
-    ZOOMOUT_AREA_MASK(0,0,0,0, 1,0,0,0), // COTMC          | TOTWC
-    ZOOMOUT_AREA_MASK(1,0,0,0, 1,0,0,0), // BOWSER_1       | WMOTR
-    ZOOMOUT_AREA_MASK(0,0,0,0, 1,0,0,0), // Unused         | BOWSER_2
-    ZOOMOUT_AREA_MASK(1,0,0,0, 0,0,0,0), // BOWSER_3       | Unused
-    ZOOMOUT_AREA_MASK(1,0,0,0, 0,0,0,0), // TTM            | Unused
-    ZOOMOUT_AREA_MASK(0,0,0,0, 0,0,0,0), // Unused         | Unused
+	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // Unused         | Unused
+	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // Unused         | Unused
+	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), // BBH            | CCM
+	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // CASTLE_INSIDE  | HMC
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // SSL            | BOB
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // SL             | WDW
+	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 1, 0, 0), // JRB            | THI
+	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), // TTC            | RR
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // CASTLE_GROUNDS | BITDW
+	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), // VCUTM          | BITFS
+	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), // SA             | BITS
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 0, 0, 0, 0), // LLL            | DDD
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 0, 0, 0, 0), // WF             | ENDING
+	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // COURTYARD      | PSS
+	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), // COTMC          | TOTWC
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // BOWSER_1       | WMOTR
+	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), // Unused         | BOWSER_2
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 0, 0, 0, 0), // BOWSER_3       | Unused
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 0, 0, 0, 0), // TTM            | Unused
+	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // Unused         | Unused
 };
 
 STATIC_ASSERT(ARRAY_COUNT(sZoomOutAreaMasks) - 1 == LEVEL_MAX / 2, "Make sure you edit sZoomOutAreaMasks when adding / removing courses.");
@@ -10137,18 +10093,6 @@ struct CutsceneSplinePoint sHmcCreditsSplineFocus[] = {
     { 3, 30, { -5595, 1699, -2108 } },
     { 4, 31, { -5546, 794, -777 } },
     { -1, 31, { -5548, -85, -572 } }
-};
-
-struct CutsceneSplinePoint sThiWigglerCreditsSplinePositions[] = {
-    { 1, 0, { -1411, 2474, -1276 } },
-    { 2, 0, { -1606, 2479, -434 } },
-    { -1, 0, { -1170, 2122, 1337 } }
-};
-
-struct CutsceneSplinePoint sThiWigglerCreditsSplineFocus[] = {
-    { 1, 50, { -1053, 2512, -928 } },
-    { 2, 50, { -1234, 2377, -114 } },
-    { -1, 50, { -758, 2147, 1054 } }
 };
 
 struct CutsceneSplinePoint sVolcanoCreditsSplinePositions[] = {

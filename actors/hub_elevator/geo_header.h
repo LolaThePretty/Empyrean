@@ -1,0 +1,18 @@
+extern const GeoLayout hub_elevator_geo[];
+extern Lights1 hub_elevator_ElevatorSides_lights;
+extern Lights1 hub_elevator_ElevatorFloor_lights;
+extern Lights1 hub_elevator_ElevatorBorders_lights;
+extern u8 hub_elevator_Tile3_rgba16[];
+extern u8 hub_elevator_Tile1_rgba16[];
+extern u8 hub_elevator_Tile2_rgba16[];
+extern Vtx hub_elevator_HubElevatorRootBone_mesh_layer_1_vtx_0[128];
+extern Gfx hub_elevator_HubElevatorRootBone_mesh_layer_1_tri_0[];
+extern Vtx hub_elevator_HubElevatorRootBone_mesh_layer_1_vtx_1[40];
+extern Gfx hub_elevator_HubElevatorRootBone_mesh_layer_1_tri_1[];
+extern Vtx hub_elevator_HubElevatorRootBone_mesh_layer_1_vtx_2[64];
+extern Gfx hub_elevator_HubElevatorRootBone_mesh_layer_1_tri_2[];
+extern Gfx mat_hub_elevator_ElevatorSides[];
+extern Gfx mat_hub_elevator_ElevatorFloor[];
+extern Gfx mat_hub_elevator_ElevatorBorders[];
+extern Gfx hub_elevator_HubElevatorRootBone_mesh_layer_1[];
+extern Gfx hub_elevator_material_revert_render_settings[];

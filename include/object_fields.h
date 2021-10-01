@@ -442,21 +442,11 @@
 #define /*0x104*/ oCheepCheepMaxYOffset                         OBJECT_FIELD_F32(0x1F)
 #define /*0x108*/ oCheepCheepRandomSwimAway                     OBJECT_FIELD_F32(0x20)
 
-/* Chuckya */
-#define /*0x088*/ oCommonAnchorAction                           OBJECT_FIELD_S32(0x00)
-#define /*0x0F8*/ oChuckyaUnused                                OBJECT_FIELD_S32(0x1C)
-#define /*0x0FC*/ oChuckyaSubActionTimer                        OBJECT_FIELD_S32(0x1D)
-#define /*0x100*/ oChuckyaNumPlayerEscapeActions                OBJECT_FIELD_S32(0x1E)
-
-/* Clam */
-#define /*0x0F4*/ oClamShakeTimer                               OBJECT_FIELD_S32(0x1B)
-
 /* Cloud */
 #define /*0x0F4*/ oCloudCenterX                                 OBJECT_FIELD_F32(0x1B)
 #define /*0x0F8*/ oCloudCenterY                                 OBJECT_FIELD_F32(0x1C)
 #define /*0x0FC*/ oCloudBlowing                                 OBJECT_FIELD_S32(0x1D)
 #define /*0x100*/ oCloudGrowSpeed                               OBJECT_FIELD_F32(0x1E)
-#define /*0x1AC*/ oCloudFwooshMovementRadius                    OBJECT_FIELD_S16(0x49, 0)
 
 /* Coin */
 #define /*0x0F4*/ oCoinRespawnBits                              OBJECT_FIELD_S32(0x1B)
@@ -1026,17 +1016,6 @@
 #define /*0x0F4*/ oSwingPlatformAngle                           OBJECT_FIELD_F32(0x1B)
 #define /*0x0F8*/ oSwingPlatformSpeed                           OBJECT_FIELD_F32(0x1C)
 
-/* Swoop */
-#define /*0x0F4*/ oSwoopBonkCountdown                           OBJECT_FIELD_S32(0x1B)
-#define /*0x0F8*/ O_SWOOP_TARGET_ANGLE_INDEX                    0x1C
-#define /*0x0F8*/ O_SWOOP_TARGET_PITCH_INDEX                    (O_SWOOP_TARGET_ANGLE_INDEX + 0) // 0x1C
-#define /*0x0F8*/ O_SWOOP_TARGET_YAW_INDEX                      (O_SWOOP_TARGET_ANGLE_INDEX + 1) // 0x1D
-#define /*0x0F8*/ O_SWOOP_TARGET_ROLL_INDEX                     (O_SWOOP_TARGET_ANGLE_INDEX + 2) // 0x1E
-#define /*0x0F8*/ oSwoopTargetAngleVec                          OBJECT_FIELD_S32(O_SWOOP_TARGET_ANGLE_INDEX)
-#define /*0x0F8*/ oSwoopTargetPitch                             OBJECT_FIELD_S32(O_SWOOP_TARGET_PITCH_INDEX)
-#define /*0x0FC*/ oSwoopTargetYaw                               OBJECT_FIELD_S32(O_SWOOP_TARGET_YAW_INDEX)
-#define /*0x100*/ oSwoopTargetRoll                              OBJECT_FIELD_S32(O_SWOOP_TARGET_ROLL_INDEX) // unused
-
 /* Thwomp */
 #define /*0x0F4*/ oThwompRandomTimer                            OBJECT_FIELD_S32(0x1B)
 
@@ -1234,17 +1213,6 @@
 
 /* Whomp */
 #define /*0x0F8*/ oWhompShakeVal                                OBJECT_FIELD_S32(0x1C)
-
-/* Wiggler */
-#define /*0x0F4*/ oWigglerFallThroughFloorsHeight               OBJECT_FIELD_F32(0x1B)
-#define /*0x0F8*/ oWigglerSegments                              OBJECT_FIELD_CHAIN_SEGMENT(0x1C)
-#define /*0x0FC*/ oWigglerWalkAnimSpeed                         OBJECT_FIELD_F32(0x1D)
-#define /*0x104*/ oWigglerSquishSpeed                           OBJECT_FIELD_F32(0x1F)
-#define /*0x108*/ oWigglerTimeUntilRandomTurn                   OBJECT_FIELD_S32(0x20)
-#define /*0x10C*/ oWigglerTargetYaw                             OBJECT_FIELD_S32(0x21)
-#define /*0x110*/ oWigglerWalkAwayFromWallTimer                 OBJECT_FIELD_S32(0x22)
-#define /*0x1AC*/ oWigglerUnused                                OBJECT_FIELD_S16(0x49,   0)
-#define /*0x1AE*/ oWigglerTextStatus                            OBJECT_FIELD_S16(0x49, + 1)
 
 /* Lll Wood Piece */
 #define /*0x0F4*/ oLllWoodPieceOscillationTimer                 OBJECT_FIELD_S32(0x1B)

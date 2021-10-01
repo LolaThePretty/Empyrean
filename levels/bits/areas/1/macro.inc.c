@@ -10,7 +10,6 @@ const MacroObject bits_seg7_macro_objs[] = {
     MACRO_OBJECT(/*preset*/ macro_coin_line_horizontal,   /*yaw*/   0, /*pos*/ -5080, -2457,  -800),
     MACRO_OBJECT(/*preset*/ macro_1up,                    /*yaw*/   0, /*pos*/  1380, -1740,  -660),
     MACRO_OBJECT(/*preset*/ macro_whomp,                  /*yaw*/  90, /*pos*/ -4180, -1330,  -800),
-    MACRO_OBJECT(/*preset*/ macro_chuckya,                /*yaw*/  90, /*pos*/ -3909,  -409, -1199),
     MACRO_OBJECT(/*preset*/ macro_yellow_coin,            /*yaw*/   0, /*pos*/   600,  -200,  -900),
     MACRO_OBJECT(/*preset*/ macro_yellow_coin,            /*yaw*/   0, /*pos*/   900,    60,  -900),
     MACRO_OBJECT(/*preset*/ macro_yellow_coin,            /*yaw*/   0, /*pos*/  1200,   310,  -900),

@@ -8,7 +8,7 @@
 // -- ROM SETTINGS --
 // Internal ROM name. NEEDS TO BE **EXACTLY** 20 CHARACTERS. Can't be 19 characters, can't be 21 characters. You can fill it with spaces.
 // The end quote should be here:               "
-#define INTERNAL_ROM_NAME "SUPERMARIO64        "
+#define INTERNAL_ROM_NAME "Empyrean            "
 // Support Rumble Pak
 // Currently not recommended, as it may cause random crashes.
 //#define ENABLE_RUMBLE (1 || VERSION_SH)
@@ -27,9 +27,9 @@
 
 // -- GAME SETTINGS --
 // Disable lives and hide the lives counter
-#define DISABLE_LIVES
+//#define DISABLE_LIVES
 // Air/Breath meter is separate from health meter when underwater
-//#define BREATH_METER
+#define BREATH_METER
 // Number of coins to spawn the "100 coin" star. If you remove the define altogether, then there won't be a 100 coin star at all.
 #define X_COIN_STAR 100
 // Stars don't kick you out of the level
@@ -125,7 +125,7 @@
 // Uncomment this if you want to skip the title screen (Super Mario 64 logo)
 //#define SKIP_TITLE_SCREEN
 // Uncomment this if you want to keep the mario head and not skip it
-//#define KEEP_MARIO_HEAD
+#define KEEP_MARIO_HEAD
 #ifdef KEEP_MARIO_HEAD // safeguard
 //Goddard easter egg from Shindou (has no effect if KEEP_MARIO_HEAD is disabled)
 #define GODDARD_EASTER_EGG
@@ -137,13 +137,13 @@
 // Remove course specific camera processing
 #define CAMERA_FIX
 // Enables "parallel lakitu camera" or "aglab cam" which lets you move the camera smoothly with the dpad
-#define PARALLEL_LAKITU_CAM
+//#define PARALLEL_LAKITU_CAM
 // Enables Puppy Camera 2, a rewritten camera that can be freely configured and modified.
 //#define PUPPYCAM
 
 // -- GRAPHICS SETTINGS --
 // Enable widescreen (16:9) support
-#define WIDE
+//#define WIDE
 // Skybox size modifier, changing this will add support for larger skybox images. NOTE: Vanilla skyboxes may break if you change this option. Be sure to rescale them accordingly.
 // Whenever you change this, make sure to run "make -C tools clean" to rebuild the skybox tool (alternatively go into skyconv.c and change the file in any way (like adding/deleting a space) to specifically rebuild that tool).
 // When increasing this, you should probably also increase the GFX pool size. (the GFX_POOL_SIZE define in src/game/game_init.h)
@@ -192,8 +192,8 @@
 // Custom debug mode. Press DPAD left to show the debug UI. Press DPAD right to enter the noclip mode.
 //#define CUSTOM_DEBUG
 // Include Puppyprint, a display library for text and large images. Also includes a custom, enhanced performance profiler.
-#define PUPPYPRINT
-#define PUPPYPRINT_DEBUG 1
+//#define PUPPYPRINT
+//#define PUPPYPRINT_DEBUG 1
 // Use cycles instead of microseconds
 //#define PUPPYPRINT_DEBUG_CYCLES
 // Visual debug enables some collision visuals. Tapping Right on the dpad will cycle between visual hitboxes, visual surfaces, both, and neither.

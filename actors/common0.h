@@ -71,33 +71,6 @@ extern const Gfx checkerboard_platform_seg8_dl_0800D618[];
 extern const Gfx checkerboard_platform_seg8_dl_0800D680[];
 extern const Collision checkerboard_platform_seg8_collision_0800D710[];
 
-// chuckya
-extern const GeoLayout chuckya_geo[];
-extern const Gfx chuckya_seg8_dl_08009FF8[];
-extern const Gfx chuckya_seg8_dl_0800A030[];
-extern const Gfx chuckya_seg8_dl_0800A068[];
-extern const Gfx chuckya_seg8_dl_0800A160[];
-extern const Gfx chuckya_seg8_dl_0800A198[];
-extern const Gfx chuckya_seg8_dl_0800A1D0[];
-extern const Gfx chuckya_seg8_dl_0800A2C8[];
-extern const Gfx chuckya_seg8_dl_0800A300[];
-extern const Gfx chuckya_seg8_dl_0800A338[];
-extern const Gfx chuckya_seg8_dl_0800A3F0[];
-extern const Gfx chuckya_seg8_dl_0800A428[];
-extern const Gfx chuckya_seg8_dl_0800A4D8[];
-extern const Gfx chuckya_seg8_dl_0800A510[];
-extern const Gfx chuckya_seg8_dl_0800A5C0[];
-extern const Gfx chuckya_seg8_dl_0800A5F8[];
-extern const Gfx chuckya_seg8_dl_0800A700[];
-extern const Gfx chuckya_seg8_dl_0800A758[];
-extern const Gfx chuckya_seg8_dl_0800A870[];
-extern const Gfx chuckya_seg8_dl_0800A8D0[];
-extern const Gfx chuckya_seg8_dl_0800A958[];
-extern const Gfx chuckya_seg8_dl_0800A998[];
-extern const Gfx chuckya_seg8_dl_0800AB70[];
-extern const Gfx chuckya_seg8_dl_0800ABE8[];
-extern const struct Animation *const chuckya_seg8_anims_0800C070[];
-
 // exclamation_box
 extern const GeoLayout exclamation_box_geo[];
 extern const Gfx exclamation_box_seg8_dl_08018FA8[];

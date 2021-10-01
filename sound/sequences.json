@@ -8,7 +8,7 @@
     "05_level_water": ["13"],
     "06_level_hot": ["0F"],
     "07_level_boss_koopa": ["12"],
-    "08_level_snow": ["0B"],
+    "08_level_snow": ["17"], //0B was the DEFAULT //14_piranha_music_box is  //15 is Kinda Ocean Like //16_course_start is Derp lol //17 is PERFECT OMFGGG //18 got Astronomia vibes lol  //19 is BEAUTIFFUL //1A is Muffled kinda too //1B is Muffled kinda //1C_endless_stairs is Cute //1D_bowser_organ is kinda Epic but don't fit // 1E is great //1F is Great //20 is Kinda like in a Cavern //21 is Ok //22 is Ew //23 is Great //24 is EH //25 is Uuuuh, Retro I guess ?? //26-27-28-29-2A-and_above don't exist lol
     "09_level_slide": ["0D"],
     "0A_level_spooky": ["10", "21"],
     "0B_event_piranha_plant": ["14_piranha_music_box"],

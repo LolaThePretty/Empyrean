@@ -3,16 +3,6 @@
 
 #include "types.h"
 
-// clam_shell
-extern const GeoLayout clam_shell_geo[];
-extern const Gfx clam_shell_seg5_dl_050011A8[];
-extern const Gfx clam_shell_seg5_dl_05001238[];
-extern const Gfx clam_shell_seg5_dl_050012B8[];
-extern const Gfx clam_shell_seg5_dl_05001478[];
-extern const Gfx clam_shell_seg5_dl_050014F8[];
-extern const Gfx clam_shell_seg5_dl_05001568[];
-extern const struct Animation *const clam_shell_seg5_anims_05001744[];
-
 // manta
 extern const Gfx manta_seg5_dl_05004960[];
 extern const Gfx manta_seg5_dl_050049C8[];

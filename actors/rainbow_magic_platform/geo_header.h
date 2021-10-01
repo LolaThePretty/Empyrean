@@ -1,0 +1,16 @@
+extern const GeoLayout rainbow_magic_platform_geo[];
+extern Lights1 rainbow_magic_platform_RainbowMagicPlatform_lights;
+extern Lights1 rainbow_magic_platform_Magic_layer4_lights;
+extern u8 rainbow_magic_platform_RainbowMagicPlatform_TR60_rgba32[];
+extern u8 rainbow_magic_platform_Magic_rgba16[];
+extern Vtx rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_5_vtx_0[20];
+extern Gfx rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_5_tri_0[];
+extern Vtx rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_4_vtx_0[8];
+extern Gfx rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_4_tri_0[];
+extern Gfx mat_rainbow_magic_platform_RainbowMagicPlatform[];
+extern Gfx mat_revert_rainbow_magic_platform_RainbowMagicPlatform[];
+extern Gfx mat_rainbow_magic_platform_Magic_layer4[];
+extern Gfx mat_revert_rainbow_magic_platform_Magic_layer4[];
+extern Gfx rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_5[];
+extern Gfx rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_4[];
+extern Gfx rainbow_magic_platform_material_revert_render_settings[];

@@ -64,4 +64,12 @@ extern Gfx dl_billboard_num_7[];
 extern Gfx dl_billboard_num_8[];
 extern Gfx dl_billboard_num_9[];
 
+extern u8 render_hud_up_arrow_act_texture[];
+extern u8 render_hud_down_arrow_act_texture[];
+extern u8 render_hud_up_arrow_idle_texture[];
+extern u8 render_hud_down_arrow_idle_texture[];
+
+extern u8 render_hud_rainbow_magic_gauge_texture[];
+extern u8 render_hud_rainbow_magic_gauge_pointer_texture[];
+
 #endif // SEGMENT2_H

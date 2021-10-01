@@ -40,7 +40,6 @@ const MacroObject rr_seg7_macro_objs[] = {
     MACRO_OBJECT(/*preset*/ macro_coin_line_horizontal,        /*yaw*/   0, /*pos*/ -7771,  4352, -3871),
     MACRO_OBJECT_WITH_BEH_PARAM(/*preset*/ macro_circling_amp,                /*yaw*/   0, /*pos*/ -6571,  4000, -2328, /*behParam*/ 1),
     MACRO_OBJECT(/*preset*/ macro_coin_line_horizontal_flying, /*yaw*/  90, /*pos*/ -6057,  4676, -5242),
-    MACRO_OBJECT(/*preset*/ macro_chuckya,                     /*yaw*/   0, /*pos*/  5114,  3828,  4028),
     MACRO_OBJECT(/*preset*/ macro_1up,                         /*yaw*/   0, /*pos*/  -165,  3543, -2352),
     MACRO_OBJECT(/*preset*/ macro_coin_line_vertical,          /*yaw*/   0, /*pos*/   250,  1400,  -180),
     MACRO_OBJECT(/*preset*/ macro_1up,                         /*yaw*/   0, /*pos*/  -735,  2860,  -150),

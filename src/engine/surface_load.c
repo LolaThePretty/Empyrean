@@ -116,10 +116,13 @@ static void add_surface_to_cell(s32 dynamic, s32 cellX, s32 cellZ, struct Surfac
     s32 listIndex;
     s32 isWater = surface->type == SURFACE_NEW_WATER || surface->type == SURFACE_NEW_WATER_BOTTOM;
 
-    if (surface->normal.y > 0.01) {
-        listIndex = isWater ? SPATIAL_PARTITION_WATER : SPATIAL_PARTITION_FLOORS;
+    if (isWater) {
+        listIndex = SPATIAL_PARTITION_WATER;
         sortDir = 1; // highest to lowest, then insertion order
-    } else if (surface->normal.y < -0.01) {
+    } else if (surface->normal.y > 0.06f) {
+        listIndex = SPATIAL_PARTITION_FLOORS;
+        sortDir = 1; // highest to lowest, then insertion order
+    } else if (surface->normal.y < -0.06f) {
         listIndex = SPATIAL_PARTITION_CEILS;
         sortDir = -1; // lowest to highest, then insertion order
     } else {

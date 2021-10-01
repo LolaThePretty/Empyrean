@@ -86,4 +86,92 @@ extern const Gfx toad_seg6_dl_06008A90[];
 extern const Gfx toad_seg6_dl_06008BD8[];
 extern const struct Animation *const toad_seg6_anims_0600FB58[];
 
+// hub elevator platform
+extern const GeoLayout hub_elevator_geo[];
+extern Lights1 hub_elevator_ElevatorSides_lights;
+extern Lights1 hub_elevator_ElevatorFloor_lights;
+extern Lights1 hub_elevator_ElevatorBorders_lights;
+extern u8 hub_elevator_Tile3_rgba16[];
+extern u8 hub_elevator_Tile1_rgba16[];
+extern u8 hub_elevator_Tile2_rgba16[];
+extern Vtx hub_elevator_HubElevatorRootBone_mesh_layer_1_vtx_0[128];
+extern Gfx hub_elevator_HubElevatorRootBone_mesh_layer_1_tri_0[];
+extern Vtx hub_elevator_HubElevatorRootBone_mesh_layer_1_vtx_1[40];
+extern Gfx hub_elevator_HubElevatorRootBone_mesh_layer_1_tri_1[];
+extern Vtx hub_elevator_HubElevatorRootBone_mesh_layer_1_vtx_2[64];
+extern Gfx hub_elevator_HubElevatorRootBone_mesh_layer_1_tri_2[];
+extern Gfx mat_hub_elevator_ElevatorSides[];
+extern Gfx mat_hub_elevator_ElevatorFloor[];
+extern Gfx mat_hub_elevator_ElevatorBorders[];
+extern Gfx hub_elevator_HubElevatorRootBone_mesh_layer_1[];
+extern Gfx hub_elevator_material_revert_render_settings[];
+
+extern const Collision hub_elevator_collision[];
+
+// ship wreck
+extern const GeoLayout ship_wreck_geo[];
+extern Lights1 ship_wreck_BodyPlanks2_lights;
+extern Lights1 ship_wreck_BodyPlanks1_lights;
+extern Lights1 ship_wreck_Black_lights;
+extern Lights1 ship_wreck_BridgeFences_layer4_lights;
+extern u8 ship_wreck_Planks_rgba16[];
+extern u8 ship_wreck_WoodenFence_rgba16[];
+extern Vtx ship_wreck_ShipWreckRoot_mesh_layer_1_vtx_0[223];
+extern Gfx ship_wreck_ShipWreckRoot_mesh_layer_1_tri_0[];
+extern Vtx ship_wreck_ShipWreckRoot_mesh_layer_1_vtx_1[688];
+extern Gfx ship_wreck_ShipWreckRoot_mesh_layer_1_tri_1[];
+extern Vtx ship_wreck_ShipWreckRoot_mesh_layer_1_vtx_2[23];
+extern Gfx ship_wreck_ShipWreckRoot_mesh_layer_1_tri_2[];
+extern Vtx ship_wreck_ShipWreckRoot_mesh_layer_4_vtx_0[48];
+extern Gfx ship_wreck_ShipWreckRoot_mesh_layer_4_tri_0[];
+extern Gfx mat_ship_wreck_BodyPlanks2[];
+extern Gfx mat_ship_wreck_BodyPlanks1[];
+extern Gfx mat_ship_wreck_Black[];
+extern Gfx mat_ship_wreck_BridgeFences_layer4[];
+extern Gfx mat_revert_ship_wreck_BridgeFences_layer4[];
+extern Gfx ship_wreck_ShipWreckRoot_mesh_layer_1[];
+extern Gfx ship_wreck_ShipWreckRoot_mesh_layer_4[];
+extern Gfx ship_wreck_material_revert_render_settings[];
+
+extern const Collision ship_wreck_collision[];
+
+// rainbow magic orb
+extern const GeoLayout rainbow_magic_orb_geo[];
+extern Lights1 rainbow_magic_orb_MagicCore_lights;
+extern Lights1 rainbow_magic_orb_RainbowMagicRings_layer1_lights;
+extern u8 rainbow_magic_orb_Rainbow_rgba16[];
+extern Vtx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_vtx_0[28];
+extern Gfx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_tri_0[];
+extern Vtx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_vtx_1[128];
+extern Gfx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_tri_1[];
+extern Gfx mat_rainbow_magic_orb_MagicCore[];
+extern Gfx mat_rainbow_magic_orb_RainbowMagicRings_layer1[];
+extern Gfx mat_revert_rainbow_magic_orb_RainbowMagicRings_layer1[];
+extern Gfx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1[];
+extern Gfx rainbow_magic_orb_material_revert_render_settings[];
+
+// rainbow magic platform
+extern const GeoLayout rainbow_magic_platform_geo[];
+extern Lights1 rainbow_magic_platform_RainbowMagicPlatform_lights;
+extern Lights1 rainbow_magic_platform_Magic_layer4_lights;
+extern u8 rainbow_magic_platform_RainbowMagicPlatform_TR60_rgba32[];
+extern u8 rainbow_magic_platform_Magic_rgba16[];
+extern Vtx rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_5_vtx_0[24];
+extern Gfx rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_5_tri_0[];
+extern Vtx rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_4_vtx_0[8];
+extern Gfx rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_4_tri_0[];
+extern Gfx mat_rainbow_magic_platform_RainbowMagicPlatform[];
+extern Gfx mat_revert_rainbow_magic_platform_RainbowMagicPlatform[];
+extern Gfx mat_rainbow_magic_platform_Magic_layer4[];
+extern Gfx mat_revert_rainbow_magic_platform_Magic_layer4[];
+extern Gfx rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_5[];
+extern Gfx rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_4[];
+extern Gfx rainbow_magic_platform_material_revert_render_settings[];
+
+extern const Collision rainbow_magic_platform_collision[];
+
+#include "hub_elevator/geo_header.h"
+
+#include "hub_elevator/collision_header.h"
+
 #endif

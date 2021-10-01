@@ -633,11 +633,6 @@
     #define POKEY_ACT_WANDER 1
     #define POKEY_ACT_UNLOAD_PARTS 2
 
-/* Swoop */
-    /* oAction */
-    #define SWOOP_ACT_IDLE 0
-    #define SWOOP_ACT_MOVE 1
-
 /* Fly guy */
     /* oAction */
     #define FLY_GUY_ACT_IDLE 0
@@ -691,20 +686,6 @@
     /* oBehParams */
     #define WOODEN_POST_BP_NO_COINS_MASK 0x0000FF00
 
-/* Wiggler */
-    /* oAction */
-    #define WIGGLER_ACT_UNINITIALIZED 0
-    #define WIGGLER_ACT_WALK 1
-    #define WIGGLER_ACT_KNOCKBACK 2
-    #define WIGGLER_ACT_JUMPED_ON 3
-    #define WIGGLER_ACT_SHRINK 4
-    #define WIGGLER_ACT_FALL_THROUGH_FLOOR 5
-
-    /* oWigglerTextStatus */
-    #define WIGGLER_TEXT_STATUS_AWAIT_DIALOG 0
-    #define WIGGLER_TEXT_STATUS_SHOWING_DIALOG 1
-    #define WIGGLER_TEXT_STATUS_COMPLETED_DIALOG 2
-
 /* Spiny */
     /* oAction */
     #define SPINY_ACT_WALK 0
@@ -727,10 +708,8 @@
     #define CLOUD_ACT_SPAWN_PARTS 0
     #define CLOUD_ACT_MAIN 1
     #define CLOUD_ACT_UNLOAD 2
-    #define CLOUD_ACT_FWOOSH_HIDDEN 3
 
     /* oBehParams2ndByte */
-    #define CLOUD_BP_FWOOSH 0
     #define CLOUD_BP_LAKITU_CLOUD 1
 
 /* Camera lakitu */

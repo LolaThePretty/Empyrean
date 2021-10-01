@@ -139,7 +139,7 @@ s32 gNumStaticSurfaceNodes;
 s32 gNumStaticSurfaces;
 
 /**
- * A pool used by chain chomp and wiggler to allocate their body parts.
+ * A pool used by chain chomp to allocate its body parts.
  */
 struct MemoryPool *gObjectMemoryPool;
 

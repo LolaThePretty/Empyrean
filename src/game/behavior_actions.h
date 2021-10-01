@@ -33,7 +33,7 @@ void bhv_pole_base_loop(void);
 void bhv_thi_huge_island_top_loop(void);
 void bhv_thi_tiny_island_top_loop(void);
 void bhv_king_bobomb_loop(void);
-void bhv_bobomb_anchor_mario_loop(void);
+//void bhv_bobomb_anchor_mario_loop(void);
 void bhv_beta_chest_bottom_init(void);
 void bhv_beta_chest_bottom_loop(void);
 void bhv_beta_chest_lid_loop(void);
@@ -50,9 +50,7 @@ void bhv_fish_group_loop(void);
 void bhv_cannon_base_loop(void);
 void bhv_cannon_barrel_loop(void);
 void bhv_cannon_base_unused_loop(void);
-void common_anchor_mario_behavior(f32 forwardVel, f32 yVel, s32 flag);
-void bhv_chuckya_loop(void);
-void bhv_chuckya_anchor_mario_loop(void);
+//void common_anchor_mario_behavior(f32 forwardVel, f32 yVel, s32 flag);
 void bhv_rotating_platform_loop(void);
 void bhv_wf_breakable_wall_loop(void);
 void bhv_kickable_board_loop(void);
@@ -111,7 +109,7 @@ void bhv_black_smoke_mario_loop(void);
 void bhv_black_smoke_bowser_loop(void);
 void bhv_black_smoke_upward_loop(void);
 void bhv_beta_fish_splash_spawner_loop(void);
-void bhv_spindrift_loop(void);
+//void bhv_spindrift_loop(void);
 void bhv_tower_platform_group_loop(void);
 void bhv_wf_sliding_tower_platform_loop(void);
 void bhv_wf_elevator_tower_platform_loop(void);
@@ -436,7 +434,6 @@ void bhv_koopa_update(void);
 void bhv_koopa_race_endpoint_update(void);
 void bhv_pokey_update(void);
 void bhv_pokey_body_part_update(void);
-void bhv_swoop_update(void);
 void bhv_fly_guy_update(void);
 void bhv_goomba_init(void);
 void bhv_goomba_update(void);
@@ -446,8 +443,6 @@ void bhv_chain_chomp_chain_part_update(void);
 void bhv_wooden_post_update(void);
 void bhv_chain_chomp_gate_init(void);
 void bhv_chain_chomp_gate_update(void);
-void bhv_wiggler_update(void);
-void bhv_wiggler_body_part_update(void);
 void bhv_enemy_lakitu_update(void);
 void bhv_camera_lakitu_init(void);
 void bhv_camera_lakitu_update(void);
@@ -530,7 +525,6 @@ void bhv_penguin_race_finish_line_update(void);
 void bhv_penguin_race_shortcut_check_update(void);
 void bhv_coffin_spawner_loop(void);
 void bhv_coffin_loop(void);
-void bhv_clam_loop(void);
 void bhv_skeeter_update(void);
 void bhv_skeeter_wave_update(void);
 void bhv_swing_platform_init(void);
@@ -550,6 +544,19 @@ void bhv_intro_scene_loop(void);
 void bhv_dust_smoke_loop(void);
 void bhv_yoshi_loop(void);
 void bhv_volcano_trap_loop(void);
+
+// V CUSTOM V
+void bhv_hub_elevator_loop(void);
+void bhv_hub_elevator_can_move(void);
+void bhv_hub_elevator_reset(void);
+
+void bhv_ship_wreck_loop(void);
+
+void bhv_rainbow_magic_orb_loop(void);
+
+void bhv_rainbow_magic_platform_loop(void);
+void bhv_rainbow_magic_platform_end(void);
+
 
 Gfx *geo_move_mario_part_from_parent(s32 run, UNUSED struct GraphNode *node, Mat4 mtx);
 

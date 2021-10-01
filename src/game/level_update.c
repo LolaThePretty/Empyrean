@@ -1,3 +1,4 @@
+#include "texscroll.h"
 #include <ultra64.h>
 
 #include "sm64.h"
@@ -944,7 +945,7 @@ void update_hud_values(void) {
         gHudDisplay.lives = gMarioState->numLives;
         gHudDisplay.keys = gMarioState->numKeys;
 
-        if (numHealthWedges > gHudDisplay.wedges) {
+        if ((numHealthWedges > gHudDisplay.wedges) && (gCurrLevelNum != LEVEL_CASTLE)) {
             play_sound(SOUND_MENU_POWER_METER, gGlobalSoundSource);
         }
         gHudDisplay.wedges = numHealthWedges;
@@ -1154,7 +1155,7 @@ s32 update_level(void) {
 
     switch (sCurrPlayMode) {
         case PLAY_MODE_NORMAL:
-            changeLevel = play_mode_normal();
+            changeLevel = play_mode_normal(); scroll_textures();
             break;
         case PLAY_MODE_PAUSED:
             changeLevel = play_mode_paused();

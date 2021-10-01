@@ -1,0 +1,2 @@
+extern void scroll_rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_4_vtx_0();
+extern void scroll_actor_geo_rainbow_magic_platform();

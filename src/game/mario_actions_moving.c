@@ -840,7 +840,7 @@ s32 act_walking(struct MarioState *m) {
     }
 
     if (m->input & INPUT_Z_PRESSED) {
-        return set_mario_action(m, ACT_CROUCH_SLIDE, 0);
+        //return set_mario_action(m, ACT_CROUCH_SLIDE, 0);
     }
 
     m->actionState = 0;
@@ -933,7 +933,7 @@ s32 act_hold_walking(struct MarioState *m) {
     }
 
     if (m->input & INPUT_Z_PRESSED) {
-        return drop_and_set_mario_action(m, ACT_CROUCH_SLIDE, 0);
+        //return drop_and_set_mario_action(m, ACT_CROUCH_SLIDE, 0);
     }
 
     m->intendedMag *= 0.4f;
@@ -1126,7 +1126,7 @@ s32 act_decelerating(struct MarioState *m) {
         }
 
         if (m->input & INPUT_Z_PRESSED) {
-            return set_mario_action(m, ACT_CROUCH_SLIDE, 0);
+            //return set_mario_action(m, ACT_CROUCH_SLIDE, 0);
         }
     }
 
@@ -1187,7 +1187,7 @@ s32 act_hold_decelerating(struct MarioState *m) {
     }
 
     if (m->input & INPUT_Z_PRESSED) {
-        return drop_and_set_mario_action(m, ACT_CROUCH_SLIDE, 0);
+        //return drop_and_set_mario_action(m, ACT_CROUCH_SLIDE, 0);
     }
 
     if (m->input & INPUT_NONZERO_ANALOG) {
@@ -1244,7 +1244,7 @@ s32 act_riding_shell_ground(struct MarioState *m) {
         if (m->forwardVel < 24.0f) {
             mario_set_forward_vel(m, 24.0f);
         }
-        return set_mario_action(m, ACT_CROUCH_SLIDE, 0);
+        //return set_mario_action(m, ACT_CROUCH_SLIDE, 0);
     }
 
     update_shell_speed(m);

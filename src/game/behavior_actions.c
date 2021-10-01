@@ -99,7 +99,6 @@ static s16 sBooHitRotations[] = { 6047, 5664, 5292, 4934, 4587, 4254, 3933, 3624
 #include "behaviors/beta_chest.inc.c"
 #include "behaviors/water_objs.inc.c"
 #include "behaviors/cannon.inc.c"
-#include "behaviors/chuckya.inc.c"
 #include "behaviors/breakable_wall.inc.c"
 #include "behaviors/kickable_board.inc.c"
 #include "behaviors/tower_door.inc.c"

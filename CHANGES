@@ -157,7 +157,7 @@ Refresh #10
 28.) Introduce f3dex2e and a GBI_FLOATS setting (#993)
 29.) Audio uses signed 16-bit integers as samples, not unsigned (#995)
 30.) Assemble RSP ucode with armips (#970)
-31.) Label Mr. Blizzard, Yoshi, Whomp, Wiggler, Wood Piece oFields. (#996)
+31.) Label Mr. Blizzard, Yoshi, Whomp, Wood Piece oFields. (#996)
 32.) update crash enhancement (#1003)
 33.) Update README.md to use new public Discord server invite
 34.) Label variables in act_idle. (#1005)
@@ -311,7 +311,7 @@ Refresh #4
 21.) Name display lists in gd renderer.c (#764)
 22.) Document a variety of PU type crashes. (#765)
 23.) Label object_behaviors. (#716)
-24.) Update swoop.inc.c (#767)
+24.) Update CIA WAS HERE.inc.c (#767)
 25.) Label tilting_pyramid.inc.c (#768)
 26.) Label red_coin.inc.c (#770)
 27.) Use more level defines (#758)

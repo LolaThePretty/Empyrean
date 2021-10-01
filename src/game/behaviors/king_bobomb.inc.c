@@ -16,9 +16,9 @@ Gfx *geo_update_held_mario_pos(s32 run, UNUSED struct GraphNode *node, Mat4 mtx)
     return NULL;
 }
 
-void bhv_bobomb_anchor_mario_loop(void) {
+/*void bhv_bobomb_anchor_mario_loop(void) {
     common_anchor_mario_behavior(50.0f, 50.0f, 64);
-}
+}*/
 
 void king_bobomb_act_0(void) {
     o->oForwardVel = 0.0f;

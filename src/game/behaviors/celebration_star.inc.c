@@ -13,7 +13,11 @@ void bhv_celebration_star_init(void) {
         cur_obj_scale(0.1f);
         o->oCelebStarIsBowserKey = 1;
     } else {
-        o->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_STAR];
+        if (gCurrLevelNum == LEVEL_BOB) {
+            o->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_GOOMBA];
+        } else {
+            o->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_KOOPA_SHELL];
+        }
         o->oFaceAnglePitch = 0;
         o->oFaceAngleRoll = 0;
         cur_obj_scale(0.4f);

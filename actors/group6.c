@@ -21,6 +21,3 @@ UNUSED static const u64 binid_2 = 2;
 #include "ukiki/anims/data.inc.c"
 #include "ukiki/anims/table.inc.c"
 UNUSED static const u64 binid_3 = 3;
-
-#include "fwoosh/model.inc.c"
-UNUSED static const u64 binid_4 = 4;

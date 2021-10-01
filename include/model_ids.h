@@ -353,7 +353,6 @@
 #define MODEL_UNAGI                       0x55        // unagi_geo
 #define MODEL_SUSHI                       0x56        // sushi_geo
 #define MODEL_DL_WHIRLPOOL                0x57        // whirlpool_seg5_dl_05013CB8
-#define MODEL_CLAM_SHELL                  0x58        // clam_shell_geo
 
 // group 5
 #define MODEL_POKEY_HEAD                  0x54        // pokey_head_geo
@@ -367,7 +366,6 @@
 #define MODEL_DL_MONTY_MOLE_HOLE          0x54        // monty_mole_hole_seg5_dl_05000840
 #define MODEL_MONTY_MOLE                  0x55        // monty_mole_geo
 #define MODEL_UKIKI                       0x56        // ukiki_geo
-#define MODEL_FWOOSH                      0x57        // fwoosh_geo
 
 // group 7
 #define MODEL_SPINDRIFT                   0x54        // spindrift_geo
@@ -397,8 +395,6 @@
 #define MODEL_ENEMY_LAKITU                0x54        // enemy_lakitu_geo
 #define MODEL_SPINY_BALL                  0x55        // spiny_ball_geo
 #define MODEL_SPINY                       0x56        // spiny_geo
-#define MODEL_WIGGLER_HEAD                0x57        // wiggler_head_geo
-#define MODEL_WIGGLER_BODY                0x58        // wiggler_body_geo
 #define MODEL_BUBBA                       0x59        // bubba_geo
 
 // referenced in macro presets. Unknown usage.
@@ -435,14 +431,15 @@
 #define MODEL_MIPS                        0x64        // mips_geo
 #define MODEL_BOO_CASTLE                  0x65        // boo_castle_geo
 #define MODEL_LAKITU                      0x66        // lakitu_geo
+#define MODEL_HUB_ELEVATOR                0x67        // hub_elevator_geo
+#define MODEL_SHIP_WRECK                  0x68        // ship_wreck_geo
+#define MODEL_RAINBOW_MAGIC_ORB           0x69        // rainbow_magic_orb_geo
+#define MODEL_RAINBOW_MAGIC_PLATFORM      0x6A        // rainbow_magic_platform_geo
 
 // group 16
-#define MODEL_CHILL_BULLY                 0x64        // chilly_chief_geo
-#define MODEL_BIG_CHILL_BULLY             0x65        // chilly_chief_big_geo
 #define MODEL_MONEYBAG                    0x66        // moneybag_geo
 
 // group 17
-#define MODEL_SWOOP                       0x64        // swoop_geo
 #define MODEL_SCUTTLEBUG                  0x65        // scuttlebug_geo
 #define MODEL_MR_I_IRIS                   0x66        // mr_i_iris_geo
 #define MODEL_MR_I                        0x67        // mr_i_geo
@@ -557,7 +554,6 @@
 #define MODEL_FLYGUY                      0xDC        // shyguy_geo
 #define MODEL_TOAD                        0xDD        // toad_geo
 #define MODEL_PEACH                       0xDE        // peach_geo
-#define MODEL_CHUCKYA                     0xDF        // chuckya_geo
 #define MODEL_WHITE_PUFF                  0xE0        // white_puff_geo
 #define MODEL_TRAJECTORY_MARKER_BALL          0xE1        // bowling_ball_track_geo - duplicate used in SSL Pyramid small sized and as a track ball
 

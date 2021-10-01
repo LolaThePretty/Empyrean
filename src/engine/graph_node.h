@@ -264,7 +264,7 @@ struct GraphNodeBone
 /** A GraphNode that draws a display list rotated in a way to always face the
  *  camera. Note that if the entire object is a billboard (like a coin or 1-up)
  *  then it simply sets the billboard flag for the entire object, this node is
- *  used for billboard parts (like a chuckya or goomba body).
+ *  used for billboard parts (like a goomba body).
  */
 struct GraphNodeBillboard
 {

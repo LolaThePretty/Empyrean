@@ -6,7 +6,7 @@
 #include "macros.h"
 #include "types.h"
 
-// used for chain chomp and wiggler
+// used for chain chomp
 struct ChainSegment
 {
     f32 posX;

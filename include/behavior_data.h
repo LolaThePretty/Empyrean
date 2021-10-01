@@ -31,8 +31,6 @@ extern const BehaviorScript bhvFishGroup[];
 extern const BehaviorScript bhvCannon[];
 extern const BehaviorScript bhvCannonBarrel[];
 extern const BehaviorScript bhvCannonBaseUnused[];
-extern const BehaviorScript bhvChuckya[];
-extern const BehaviorScript bhvChuckyaAnchorMario[];
 extern const BehaviorScript bhvRotatingPlatform[];
 extern const BehaviorScript bhvTower[];
 extern const BehaviorScript bhvBulletBillCannon[];
@@ -444,7 +442,6 @@ extern const BehaviorScript bhvKoopaRaceEndpoint[];
 extern const BehaviorScript bhvKoopaFlag[];
 extern const BehaviorScript bhvPokey[];
 extern const BehaviorScript bhvPokeyBodyPart[];
-extern const BehaviorScript bhvSwoop[];
 extern const BehaviorScript bhvFlyGuy[];
 extern const BehaviorScript bhvGoomba[];
 extern const BehaviorScript bhvGoombaTripletSpawner[];
@@ -452,8 +449,6 @@ extern const BehaviorScript bhvChainChomp[];
 extern const BehaviorScript bhvChainChompChainPart[];
 extern const BehaviorScript bhvWoodenPost[];
 extern const BehaviorScript bhvChainChompGate[];
-extern const BehaviorScript bhvWigglerHead[];
-extern const BehaviorScript bhvWigglerBody[];
 extern const BehaviorScript bhvEnemyLakitu[];
 extern const BehaviorScript bhvCameraLakitu[];
 extern const BehaviorScript bhvCloud[];
@@ -513,7 +508,6 @@ extern const BehaviorScript bhvPenguinRaceFinishLine[];
 extern const BehaviorScript bhvPenguinRaceShortcutCheck[];
 extern const BehaviorScript bhvCoffinSpawner[];
 extern const BehaviorScript bhvCoffin[];
-extern const BehaviorScript bhvClamShell[];
 extern const BehaviorScript bhvSkeeter[];
 extern const BehaviorScript bhvSkeeterWave[];
 extern const BehaviorScript bhvSwingPlatform[];
@@ -529,5 +523,11 @@ extern const BehaviorScript bhvEndBirds1[];
 extern const BehaviorScript bhvEndBirds2[];
 extern const BehaviorScript bhvIntroScene[];
 extern const BehaviorScript bhvUnusedFakeStar[];
+// V CUSTOM V
+extern const BehaviorScript bhvHubElevator[];
+extern const BehaviorScript bhvShipWreck[];
+
+extern const BehaviorScript bhvRainbowMagicOrb[];
+extern const BehaviorScript bhvRainbowMagicPlatform[];
 
 #endif // BEHAVIOR_DATA_H

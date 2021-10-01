@@ -34,6 +34,21 @@
 #include "rumble_init.h"
 
 
+extern f32 HUBelevatorIsUp;
+extern f32 HUBelevatorGoesUp;
+
+extern f32 HUBelevatorIsDown;
+extern f32 HUBelevatorGoesDown;
+
+// V CUSTOM V
+
+f32 ZinputCheck = 0.0f;
+
+f32 RainbowMagic = 103.0f;
+f32 RainbowMagicBool = 0.0f;
+
+//extern f32 HubRescueCutscene;
+
 /**************************************************
  *                    ANIMATIONS                  *
  **************************************************/
@@ -1284,6 +1299,13 @@ void update_mario_button_inputs(struct MarioState *m) {
     } else if (m->framesSinceB < 0xFF) {
         m->framesSinceB += 1;
     }
+
+    if ((m->input & INPUT_Z_DOWN) && (RainbowMagic < 103.0f)) {
+
+        auto_run(m);
+
+    }
+
 }
 
 /**
@@ -1383,8 +1405,13 @@ void update_mario_inputs(struct MarioState *m) {
     }
     #endif
 
-    update_mario_button_inputs(m);
-    update_mario_joystick_inputs(m);
+    //V CUSTOM V
+
+    //if (HubRescueCutscene == 0.0f) {
+        update_mario_button_inputs(m);
+        update_mario_joystick_inputs(m);
+    //}
+
     update_mario_geometry_inputs(m);
 
     debug_print_speed_action_normal(m);
@@ -1418,6 +1445,7 @@ void update_mario_inputs(struct MarioState *m) {
     if (m->doubleJumpTimer > 0) {
         m->doubleJumpTimer--;
     }
+
 }
 
 /**
@@ -1701,7 +1729,39 @@ void mario_update_hitbox_and_cap_model(struct MarioState *m) {
         bodyState->modelState &= ~MODEL_STATE_MASK;
         bodyState->modelState |= (MODEL_STATE_ALPHA | m->fadeWarpOpacity);
     }
+
+    // V CUSTOM STUFF V
+
+    if ((m->input & INPUT_Z_PRESSED) && (HUBelevatorIsDown == 1.0f)) {
+        HUBelevatorGoesUp = 1.0f;
+        HUBelevatorGoesDown = 0.0f;
+        ZinputCheck = 1.0f;
+    } else if ((m->input & INPUT_Z_PRESSED) && (HUBelevatorIsUp == 1.0f)) {
+                HUBelevatorGoesUp = 0.0f;
+                HUBelevatorGoesDown = 1.0f;
+                ZinputCheck = 1.0f;
+            } else {
+                ZinputCheck = 0.0f;
+            }
+    
+    /*if (m->pos[1] < -7383.0f) {
+        HubRescueCutscene = 1.0f;
+        //m->pos[1] = approach_f32(m->pos[1], 0, 64, 64);
+    }
+
+    if (HubRescueCutscene == 1.0f) {
+        PlayHubRescueCutscene();
+    }*/
+
 }
+
+/*f32 HubRescueSteps = 0.0f;
+
+void PlayHubRescueCutscene(struct MarioState *m) {
+
+    m->pos[0] = 0.0f;
+
+}*/
 
 /**
  * An unused and possibly a debug function. Z + another button input
@@ -1938,4 +1998,32 @@ void init_mario_from_save_file(void) {
 
     gHudDisplay.coins = 0;
     gHudDisplay.wedges = 8;
+}
+
+#define o gCurrentObject
+
+void auto_run(struct MarioState *m) {
+    
+    m->controller->stickMag = 64;
+    m->controller->stickY = 64;
+    m->forwardVel = 48.0f;
+
+    if (RainbowMagic < 103.0f) {
+        spawn_rainbow_platform();
+    }
+
+        if (RainbowMagic >= 103.0f) {
+            RainbowMagicBool = 0.0f;
+        }
+
+}
+
+void spawn_rainbow_platform(void) {
+
+    RainbowMagic += 0.2f;
+    if (RainbowMagic > 102.0f) {
+        RainbowMagic = 103.0f;
+    }
+    spawn_object_relative(0, 0, 0, 0, o, MODEL_RAINBOW_MAGIC_PLATFORM, bhvRainbowMagicPlatform);
+
 }

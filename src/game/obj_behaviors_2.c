@@ -76,7 +76,6 @@ f32 sObjSavedPosX;
 f32 sObjSavedPosY;
 f32 sObjSavedPosZ;
 
-void wiggler_jumped_on_attack_handler(void);
 void huge_goomba_weakly_attacked(void);
 
 static s32 obj_is_rendering_enabled(void) {
@@ -713,10 +712,6 @@ static s32 obj_handle_attacks(struct ObjectHitbox *hitbox, s32 attackedMarioActi
                     obj_set_speed_to_zero();
                     break;
 
-                case ATTACK_HANDLER_SPECIAL_WIGGLER_JUMPED_ON:
-                    wiggler_jumped_on_attack_handler();
-                    break;
-
                 case ATTACK_HANDLER_SPECIAL_HUGE_GOOMBA_WEAKLY_ATTACKED:
                     huge_goomba_weakly_attacked();
                     break;
@@ -875,11 +870,9 @@ static void treat_far_home_as_mario(f32 threshold) {
 
 #include "behaviors/koopa.inc.c" // TODO: Text arg field name
 #include "behaviors/pokey.inc.c"
-#include "behaviors/swoop.inc.c"
 #include "behaviors/fly_guy.inc.c"
 #include "behaviors/goomba.inc.c"
 #include "behaviors/chain_chomp.inc.c" // TODO: chain_chomp_sub_act_lunge documentation
-#include "behaviors/wiggler.inc.c"     // TODO
 #include "behaviors/spiny.inc.c"
 #include "behaviors/enemy_lakitu.inc.c" // TODO
 #include "behaviors/cloud.inc.c"
@@ -911,6 +904,14 @@ static void treat_far_home_as_mario(f32 threshold) {
 #include "behaviors/mad_piano.inc.c"
 #include "behaviors/flying_bookend_switch.inc.c"
 
+// V CUSTOM V
+#include "behaviors/hub_elevator.inc.c"
+#include "behaviors/ship_wreck.inc.c"
+
+#include "behaviors/rainbow_magic_orb.inc.c"
+#include "behaviors/rainbow_magic_platform.inc.c"
+
+
 /**
  * Used by bowser, fly guy, piranha plant, and fire spitters.
  */
@@ -937,7 +938,6 @@ void obj_spit_fire(s16 relativePosX, s16 relativePosY, s16 relativePosZ, f32 sca
 #include "behaviors/bird.inc.c"
 #include "behaviors/racing_penguin.inc.c"
 #include "behaviors/coffin.inc.c"
-#include "behaviors/clam.inc.c"
 #include "behaviors/skeeter.inc.c"
 #include "behaviors/swing_platform.inc.c"
 #include "behaviors/donut_platform.inc.c"

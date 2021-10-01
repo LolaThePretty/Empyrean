@@ -11,3 +11,7 @@
 #include "toad/geo.inc.c"
 #include "mips/geo.inc.c"
 #include "boo_castle/geo.inc.c"
+#include "hub_elevator/geo.inc.c"
+#include "ship_wreck/geo.inc.c"
+#include "rainbow_magic_orb/geo.inc.c"
+#include "rainbow_magic_platform/geo.inc.c"

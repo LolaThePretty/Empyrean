@@ -2737,12 +2737,8 @@ sound_ref .sound_general_short_pound
 sound_ref .sound_general_short_pound
 sound_ref .sound_general_open_chest
 sound_ref .sound_general_open_chest
-sound_ref .sound_general_clam_shell1
-sound_ref .sound_general_clam_shell1
 sound_ref .sound_general_box_landing
 sound_ref .chan_12EB
-sound_ref .sound_general_clam_shell2
-sound_ref .sound_general_clam_shell3
 sound_ref .sound_general_painting_eject
 sound_ref .sound_general_painting_eject
 sound_ref .sound_general_painting_eject
@@ -3183,12 +3179,6 @@ layer_portamento 0x81, 27, 255
 layer_note1 25, 0x5a, 108
 layer_end
 
-.sound_general_clam_shell1:
-chan_setbank 4
-chan_setinstr 11
-chan_setlayer 0, .layer_12C7
-chan_end
-
 .layer_12C7:
 layer_note1 24, 0xa, 110
 .layer_12CA:
@@ -3227,23 +3217,11 @@ layer_portamento 0x2, 17, 0x28
 layer_note1 5, 0x60, 127
 layer_end
 
-.sound_general_clam_shell2:
-chan_setbank 4
-chan_setinstr 11
-chan_setlayer 0, .layer_130B
-chan_end
-
 .layer_130B:
 layer_note1 19, 0x6, 110
 layer_note1 31, 0x6, 110
 layer_transpose 8
 layer_jump .layer_12CA
-
-.sound_general_clam_shell3:
-chan_setbank 4
-chan_setinstr 5
-chan_setlayer 0, .layer_131E
-chan_end
 
 .layer_131E:
 layer_setinstr 11
@@ -5045,7 +5023,6 @@ sound_ref .sound_obj_baby_penguin_yell
 sound_ref .sound_obj_king_bobomb_jump
 sound_ref .sound_obj_king_whomp_death
 sound_ref .sound_obj_boo_laugh_long
-sound_ref .sound_obj_swoop
 sound_ref .sound_obj_eel
 sound_ref .sound_obj_eyerok_show_eye
 sound_ref .sound_obj_mr_blizzard_alert
@@ -5064,13 +5041,10 @@ sound_ref .sound_obj_bobomb_buddy_talk
 sound_ref .chan_26A9
 sound_ref .sound_obj_eyerok_sound_short
 sound_ref .sound_obj_eyerok_sound_long
-sound_ref .sound_obj_wiggler_high_pitch
 sound_ref .sound_obj_heaveho_tossed
-sound_ref .sound_obj_wiggler_death
 sound_ref .sound_obj_bowser_intro_laugh
 sound_ref .sound_obj_enemy_death_high
 sound_ref .sound_obj_enemy_death_low
-sound_ref .sound_obj_swoop_death
 sound_ref .sound_obj_koopa_flyguy_pokey_death
 sound_ref .sound_obj_snowman_bounce
 sound_ref .sound_obj_snowman_explode
@@ -5082,10 +5056,6 @@ sound_ref .sound_obj_mips_rabbit
 sound_ref .sound_obj_mri_spinning
 sound_ref .sound_obj_mips_rabbit_water
 sound_ref .sound_obj_eyerok_explode
-sound_ref .sound_obj_chuckya_death
-sound_ref .sound_obj_wiggler_talk
-sound_ref .sound_obj_wiggler_attacked
-sound_ref .sound_obj_wiggler_low_pitch
 sound_ref .sound_obj_snufit_skeeter_death
 sound_ref .sound_obj_bubba_chomp
 sound_ref .sound_obj_enemy_defeat_shrink
@@ -6100,12 +6070,6 @@ chan_end
 layer_note1 55, 0x32, 127
 layer_end
 
-.sound_obj_swoop:
-chan_setbank 7
-chan_setinstr 7
-chan_setlayer 0, .layer_254A
-chan_end
-
 .layer_254A:
 layer_portamento 0x82, 51, 127
 layer_note1 48, 0x6, 127
@@ -6338,12 +6302,6 @@ layer_portamento 0x81, 26, 255
 layer_note1 19, 0x60, 127
 layer_end
 
-.sound_obj_wiggler_high_pitch:
-chan_setbank 6
-chan_setinstr 7
-chan_setlayer 0, .layer_26E7
-chan_end
-
 .layer_26E7:
 layer_transpose 3
 layer_note0 31, 0x8, 127, 70
@@ -6404,15 +6362,6 @@ layer_portamento 0x81, 39, 255
 layer_note1 27, 0x1c, 105
 layer_end
 
-.sound_obj_swoop_death:
-chan_call .sound_obj_default_death
-chan_setval 1
-chan_call .delay
-chan_setbank 7
-chan_setinstr 7
-chan_setlayer 1, .layer_254A
-chan_end
-
 .sound_obj_koopa_flyguy_pokey_death:
 chan_call .sound_obj_default_death
 chan_setval 1
@@ -6420,15 +6369,6 @@ chan_call .delay
 chan_setbank 7
 chan_setinstr 8
 chan_setlayer 1, .layer_2461
-chan_end
-
-.sound_obj_wiggler_death:
-chan_call .sound_obj_default_death
-chan_setval 1
-chan_call .delay
-chan_setbank 7
-chan_setinstr 0
-chan_setlayer 1, .layer_2219
 chan_end
 
 .sound_obj_snowman_bounce:
@@ -6569,16 +6509,6 @@ layer_call .layer_fn_119F
 layer_transpose -20
 layer_jump .layer_fn_119F
 
-.sound_obj_chuckya_death:
-chan_call .sound_obj_king_whomp_death
-chan_setlayer 1, .layer_288B
-chan_setval 2
-chan_call .delay
-chan_setbank 8
-chan_setinstr 10
-chan_setlayer 2, .layer_2878
-chan_end
-
 .layer_2878:
 layer_portamento 0x83, 43, 255
 layer_note1 46, 0x9, 115
@@ -6591,13 +6521,6 @@ layer_end
 .layer_288B:
 layer_transpose 2
 layer_jump .layer_252C
-
-.sound_obj_wiggler_talk:
-chan_setbank 7
-chan_setinstr 10
-chan_setenvelope .envelope_3344
-chan_setlayer 0, .layer_289B
-chan_end
 
 .layer_289B:
 layer_transpose 3
@@ -6617,13 +6540,6 @@ layer_portamento 0x81, 43, 255
 layer_note1 51, 0xc, 105
 layer_end
 
-.sound_obj_wiggler_attacked:
-chan_setbank 7
-chan_setinstr 10
-chan_setenvelope .envelope_3344
-chan_setlayer 0, .layer_28D2
-chan_end
-
 .layer_28D2:
 layer_transpose 6
 layer_portamento 0x83, 53, 255
@@ -6631,12 +6547,6 @@ layer_note1 48, 0x8, 105
 layer_note0 60, 0x9, 105, 100
 layer_note1 39, 0xb, 105
 layer_end
-
-.sound_obj_wiggler_low_pitch:
-chan_setbank 6
-chan_setinstr 7
-chan_setlayer 0, .layer_28EB
-chan_end
 
 .layer_28EB:
 layer_transpose -2
@@ -6715,7 +6625,6 @@ sound_ref .sound_air_heaveho_move
 sound_ref .chan_2A3D
 sound_ref .sound_air_bobomb_lit_fuse
 sound_ref .sound_air_howling_wind
-sound_ref .sound_air_chuckya_move
 sound_ref .sound_air_peach_twinkle
 sound_ref .sound_air_bowser_spit_fire
 sound_ref .sound_air_bowser_spit_fire
@@ -6938,13 +6847,6 @@ layer_setpan 64
 layer_note1 52, 0x28, 45
 layer_delay 0x38
 layer_jump .layer_2AB7
-
-.sound_air_chuckya_move:
-chan_setbank 5
-chan_setinstr 5
-chan_setenvelope .envelope_32C4
-chan_setlayer 0, .layer_2B0F
-chan_end
 
 .layer_2B0F:
 layer_portamento 0x81, 56, 255

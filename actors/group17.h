@@ -86,20 +86,4 @@ extern const Gfx snufit_seg6_dl_06009A10[];
 extern const Gfx snufit_seg6_dl_06009B18[];
 extern const Gfx snufit_seg6_dl_06009B68[];
 
-// swoop
-extern const GeoLayout swoop_geo[];
-extern const Gfx swoop_seg6_dl_060065B8[];
-extern const Gfx swoop_seg6_dl_060066F8[];
-extern const Gfx swoop_seg6_dl_06006758[];
-extern const Gfx swoop_seg6_dl_06006848[];
-extern const Gfx swoop_seg6_dl_06006880[];
-extern const Gfx swoop_seg6_dl_06006A10[];
-extern const Gfx swoop_seg6_dl_06006A68[];
-extern const Gfx swoop_seg6_dl_06006A88[];
-extern const Gfx swoop_seg6_dl_06006B98[];
-extern const Gfx swoop_seg6_dl_06006BD0[];
-extern const Gfx swoop_seg6_dl_06006CC8[];
-extern const Gfx swoop_seg6_dl_06006D00[];
-extern const struct Animation *const swoop_seg6_anims_060070D0[];
-
 #endif

@@ -1,7 +1,6 @@
 // 0x0700EEF4 - 0x0700EFAA
 const MacroObject ddd_seg7_area_1_macro_objs[] = {
     MACRO_OBJECT(/*preset*/ macro_seaweed_bundle,       /*yaw*/   0, /*pos*/ -2880, -5120, -1850),
-    MACRO_OBJECT(/*preset*/ macro_clam_shell,           /*yaw*/  90, /*pos*/ -4760, -5120,   580),
     MACRO_OBJECT(/*preset*/ macro_seaweed_bundle,       /*yaw*/   0, /*pos*/ -3510, -5120,  1950),
     MACRO_OBJECT(/*preset*/ macro_hidden_1up_trigger,   /*yaw*/   0, /*pos*/ -4760, -5100,   580),
     MACRO_OBJECT_WITH_BEH_PARAM(/*preset*/ macro_hidden_1up,           /*yaw*/   0, /*pos*/ -4760, -5080,   580, /*behParam*/ 1),

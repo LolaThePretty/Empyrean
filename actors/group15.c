@@ -23,3 +23,18 @@ UNUSED static const u64 binid_2 = 2;
 
 #include "boo_castle/model.inc.c"
 UNUSED static const u64 binid_3 = 3;
+
+#include "hub_elevator/model.inc.c"
+#include "hub_elevator/collision.inc.c"
+UNUSED static const u64 binid_4 = 4;
+
+#include "ship_wreck/model.inc.c"
+#include "ship_wreck/collision.inc.c"
+UNUSED static const u64 binid_5 = 5;
+
+#include "rainbow_magic_orb/model.inc.c"
+UNUSED static const u64 binid_6 = 6;
+
+#include "rainbow_magic_platform/model.inc.c"
+#include "rainbow_magic_platform/collision.inc.c"
+UNUSED static const u64 binid_7 = 7;
