@@ -1,0 +1,9 @@
+extern const GeoLayout hub_elevator_magic_beam_geo[];
+extern Lights1 hub_elevator_magic_beam_ElevatorRayBeam_lights;
+extern u8 hub_elevator_magic_beam_Beam_rgba32[];
+extern Vtx hub_elevator_magic_beam_ElevatorRayBeamRoot_mesh_layer_5_vtx_0[165];
+extern Gfx hub_elevator_magic_beam_ElevatorRayBeamRoot_mesh_layer_5_tri_0[];
+extern Gfx mat_hub_elevator_magic_beam_ElevatorRayBeam[];
+extern Gfx mat_revert_hub_elevator_magic_beam_ElevatorRayBeam[];
+extern Gfx hub_elevator_magic_beam_ElevatorRayBeamRoot_mesh_layer_5[];
+extern Gfx hub_elevator_magic_beam_material_revert_render_settings[];

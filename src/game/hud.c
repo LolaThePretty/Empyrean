@@ -24,6 +24,8 @@
 
 extern f32 HUBelevatorMove;
 
+f32 numberOfStarsCollected;
+
 //f32 HubRescueCutscene = 0.0f;
 
 /* @file hud.c
@@ -599,7 +601,7 @@ void render_hud(void) {
     }
 
     //! v Debug Stuff Here v
-    //if (/*debugteststuffhere*/ == 0.0f) {
+    //if (numberOfStarsCollected == 1) {
     //    render_hud_up_arrow_act(280, 160, 16, 16, 0, 0);
     //}
     //! ^ Debug Stuff Here ^
@@ -610,6 +612,8 @@ void render_hud(void) {
         render_hud_rainbow_magic_gauge_pointer(5, 0, 32, 230, 0, 18);
 
     }
+
+    numberOfStarsCollected = gHudDisplay.stars;
 
 }
 

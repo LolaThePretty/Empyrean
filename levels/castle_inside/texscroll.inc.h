@@ -1,4 +1,3 @@
-extern void scroll_castle_inside_dl_ElevatorRayBeam_mesh_layer_5_vtx_0();
 extern void scroll_castle_inside_dl_LakeCloudWater_mesh_layer_5_vtx_0();
 extern void scroll_castle_inside_dl_MountainWater1_mesh_layer_5_vtx_0();
 extern void scroll_castle_inside_dl_Water_mesh_layer_5_vtx_0();

@@ -547,6 +547,7 @@ void bhv_volcano_trap_loop(void);
 
 // V CUSTOM V
 void bhv_hub_elevator_loop(void);
+void hub_elevator_enabled(void);
 void bhv_hub_elevator_can_move(void);
 void bhv_hub_elevator_reset(void);
 
@@ -556,6 +557,12 @@ void bhv_rainbow_magic_orb_loop(void);
 
 void bhv_rainbow_magic_platform_loop(void);
 void bhv_rainbow_magic_platform_end(void);
+
+void bhv_level_4_barrier_loop(void);
+
+void bhv_holy_light_beam_loop(void);
+
+void bhv_hub_elevator_magic_beam_loop(void);
 
 
 Gfx *geo_move_mario_part_from_parent(s32 run, UNUSED struct GraphNode *node, Mat4 mtx);

@@ -906,7 +906,12 @@ static void treat_far_home_as_mario(f32 threshold) {
 
 // V CUSTOM V
 #include "behaviors/hub_elevator.inc.c"
+#include "behaviors/hub_elevator_magic_beam.inc.c"
+
+#include "behaviors/holy_light_beam.inc.c"
+
 #include "behaviors/ship_wreck.inc.c"
+#include "behaviors/level_4_barrier.inc.c"
 
 #include "behaviors/rainbow_magic_orb.inc.c"
 #include "behaviors/rainbow_magic_platform.inc.c"

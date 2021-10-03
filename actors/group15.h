@@ -142,7 +142,7 @@ extern Lights1 rainbow_magic_orb_RainbowMagicRings_layer1_lights;
 extern u8 rainbow_magic_orb_Rainbow_rgba16[];
 extern Vtx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_vtx_0[28];
 extern Gfx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_tri_0[];
-extern Vtx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_vtx_1[128];
+extern Vtx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_vtx_1[256];
 extern Gfx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_tri_1[];
 extern Gfx mat_rainbow_magic_orb_MagicCore[];
 extern Gfx mat_rainbow_magic_orb_RainbowMagicRings_layer1[];
@@ -169,6 +169,33 @@ extern Gfx rainbow_magic_platform_RainbowMagicPlatformRoot_mesh_layer_4[];
 extern Gfx rainbow_magic_platform_material_revert_render_settings[];
 
 extern const Collision rainbow_magic_platform_collision[];
+
+// level 4 barrier
+
+extern const Collision level_4_barrier_collision[];
+
+// holy light beam
+
+extern const GeoLayout holy_light_beam_geo[];
+extern Lights1 holy_light_beam_YellowLight_lights;
+extern u8 holy_light_beam_YellowPixel_TR20_rgba32[];
+extern Vtx holy_light_beam_HolyLightBeamRoot_mesh_layer_5_vtx_0[72];
+extern Gfx holy_light_beam_HolyLightBeamRoot_mesh_layer_5_tri_0[];
+extern Gfx mat_holy_light_beam_YellowLight[];
+extern Gfx mat_revert_holy_light_beam_YellowLight[];
+extern Gfx holy_light_beam_HolyLightBeamRoot_mesh_layer_5[];
+extern Gfx holy_light_beam_material_revert_render_settings[];
+
+// hub elevator magic beam
+extern const GeoLayout hub_elevator_magic_beam_geo[];
+extern Lights1 hub_elevator_magic_beam_ElevatorRayBeam_lights;
+extern u8 hub_elevator_magic_beam_Beam_rgba32[];
+extern Vtx hub_elevator_magic_beam_ElevatorRayBeamRoot_mesh_layer_5_vtx_0[165];
+extern Gfx hub_elevator_magic_beam_ElevatorRayBeamRoot_mesh_layer_5_tri_0[];
+extern Gfx mat_hub_elevator_magic_beam_ElevatorRayBeam[];
+extern Gfx mat_revert_hub_elevator_magic_beam_ElevatorRayBeam[];
+extern Gfx hub_elevator_magic_beam_ElevatorRayBeamRoot_mesh_layer_5[];
+extern Gfx hub_elevator_magic_beam_material_revert_render_settings[];
 
 #include "hub_elevator/geo_header.h"
 

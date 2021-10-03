@@ -941,7 +941,7 @@ s32 unused_resolve_floor_or_ceil_collisions(s32 checkCeil, f32 *px, f32 *py, f32
 #define RAY_OFFSET 30.0f /*How many units to extrapolate surfaces when testing for a raycast*/
 #define RAY_STEPS 4 /*How many steps to do when casting rays, default to quartersteps.*/
 
-s32 ray_surface_intersect(Vec3f orig, Vec3f dir, f32 dir_length, struct Surface *surface, Vec3f hit_pos, f32 *length) {
+/*s32 ray_surface_intersect(Vec3f orig, Vec3f dir, f32 dir_length, struct Surface *surface, Vec3f hit_pos, f32 *length) {
     Vec3f v0, v1, v2, e1, e2, h, s, q;
     f32 a, f, u, v;
     Vec3f add_dir;
@@ -1117,5 +1117,5 @@ void find_surface_on_ray(Vec3f orig, Vec3f dir, struct Surface **hit_surface, Ve
             find_surface_on_ray_cell(cellPrevX, cellZ, orig, normalized_dir, dir_length, hit_surface, hit_pos, &max_length, flags);
         }
     }
-}
+}*/
 

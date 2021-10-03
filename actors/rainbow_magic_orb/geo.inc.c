@@ -1,6 +1,6 @@
 
 const GeoLayout rainbow_magic_orb_geo[] = {
-	GEO_NODE_START(),
+	GEO_CULLING_RADIUS(10000),
 	GEO_OPEN_NODE(),
 		GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1),
 		GEO_OPEN_NODE(),

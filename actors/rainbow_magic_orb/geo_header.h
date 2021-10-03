@@ -4,7 +4,7 @@ extern Lights1 rainbow_magic_orb_RainbowMagicRings_layer1_lights;
 extern u8 rainbow_magic_orb_Rainbow_rgba16[];
 extern Vtx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_vtx_0[28];
 extern Gfx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_tri_0[];
-extern Vtx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_vtx_1[128];
+extern Vtx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_vtx_1[256];
 extern Gfx rainbow_magic_orb_RainbowMagicRoot_mesh_layer_1_tri_1[];
 extern Gfx mat_rainbow_magic_orb_MagicCore[];
 extern Gfx mat_rainbow_magic_orb_RainbowMagicRings_layer1[];

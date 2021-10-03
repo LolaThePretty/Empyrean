@@ -15,3 +15,5 @@
 #include "ship_wreck/geo.inc.c"
 #include "rainbow_magic_orb/geo.inc.c"
 #include "rainbow_magic_platform/geo.inc.c"
+#include "holy_light_beam/geo.inc.c"
+#include "hub_elevator_magic_beam/geo.inc.c"

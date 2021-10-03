@@ -523,11 +523,16 @@ extern const BehaviorScript bhvEndBirds1[];
 extern const BehaviorScript bhvEndBirds2[];
 extern const BehaviorScript bhvIntroScene[];
 extern const BehaviorScript bhvUnusedFakeStar[];
+
 // V CUSTOM V
 extern const BehaviorScript bhvHubElevator[];
+extern const BehaviorScript bhvHubElevatorMagicBeam[];
 extern const BehaviorScript bhvShipWreck[];
+
+extern const BehaviorScript bhvHolyLightBeam[];
 
 extern const BehaviorScript bhvRainbowMagicOrb[];
 extern const BehaviorScript bhvRainbowMagicPlatform[];
+extern const BehaviorScript bhvLevel4Barrier[];
 
 #endif // BEHAVIOR_DATA_H

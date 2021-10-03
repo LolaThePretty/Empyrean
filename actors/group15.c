@@ -38,3 +38,12 @@ UNUSED static const u64 binid_6 = 6;
 #include "rainbow_magic_platform/model.inc.c"
 #include "rainbow_magic_platform/collision.inc.c"
 UNUSED static const u64 binid_7 = 7;
+
+#include "level_4_barrier/collision.inc.c"
+UNUSED static const u64 binid_8 = 8;
+
+#include "holy_light_beam/model.inc.c"
+UNUSED static const u64 binid_9 = 9;
+
+#include "hub_elevator_magic_beam/model.inc.c"
+UNUSED static const u64 binid_10 = 10;

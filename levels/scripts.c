@@ -328,6 +328,8 @@ const LevelScript script_func_global_16[] = {
     LOAD_MODEL_FROM_GEO(MODEL_SHIP_WRECK,                    ship_wreck_geo),
     LOAD_MODEL_FROM_GEO(MODEL_RAINBOW_MAGIC_ORB,                    rainbow_magic_orb_geo),
     LOAD_MODEL_FROM_GEO(MODEL_RAINBOW_MAGIC_PLATFORM,                    rainbow_magic_platform_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_HOLY_LIGHT_BEAM,                    holy_light_beam_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_HUB_ELEVATOR_MAGIC_BEAM,                    hub_elevator_magic_beam_geo),
     RETURN(),
 };
 

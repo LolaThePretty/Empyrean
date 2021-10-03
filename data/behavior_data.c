@@ -5900,6 +5900,7 @@ const BehaviorScript bhvHubElevator[] = {
     BEGIN(OBJ_LIST_SURFACE),
     LOAD_COLLISION_DATA(hub_elevator_collision),
     OR_INT(oFlags, (OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_UCODE_LARGE)),
+    SET_FLOAT(oDrawingDistance, 20000),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_hub_elevator_loop),
         CALL_NATIVE(load_object_collision_model),
@@ -5920,6 +5921,7 @@ const BehaviorScript bhvShipWreck[] = {
 const BehaviorScript bhvRainbowMagicOrb[] = {
     BEGIN(OBJ_LIST_LEVEL),
     OR_INT(oFlags, (OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    SET_FLOAT(oDrawingDistance, 20000),
     BEGIN_LOOP(),
         SET_INT(oIntangibleTimer, 0),
         CALL_NATIVE(bhv_rainbow_magic_orb_loop),
@@ -5936,4 +5938,31 @@ const BehaviorScript bhvRainbowMagicPlatform[] = {
     CALL_NATIVE(bhv_rainbow_magic_platform_loop),
     DELAY(20),
     CALL_NATIVE(bhv_rainbow_magic_platform_end),
+};
+
+const BehaviorScript bhvLevel4Barrier[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(level_4_barrier_collision),
+    OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_UCODE_LARGE)),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_level_4_barrier_loop),
+        CALL_NATIVE(load_object_collision_model),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvHolyLightBeam[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE )),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_holy_light_beam_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvHubElevatorMagicBeam[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    SET_FLOAT(oDrawingDistance, 20000),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_hub_elevator_magic_beam_loop),
+    END_LOOP(),
 };

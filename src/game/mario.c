@@ -34,13 +34,14 @@
 #include "rumble_init.h"
 
 
+
+// V CUSTOM V
+
 extern f32 HUBelevatorIsUp;
 extern f32 HUBelevatorGoesUp;
 
 extern f32 HUBelevatorIsDown;
 extern f32 HUBelevatorGoesDown;
-
-// V CUSTOM V
 
 f32 ZinputCheck = 0.0f;
 
@@ -2020,7 +2021,7 @@ void auto_run(struct MarioState *m) {
 
 void spawn_rainbow_platform(void) {
 
-    RainbowMagic += 0.2f;
+    RainbowMagic += 0.4f;
     if (RainbowMagic > 102.0f) {
         RainbowMagic = 103.0f;
     }
