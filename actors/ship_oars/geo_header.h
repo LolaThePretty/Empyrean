@@ -1,0 +1,15 @@
+extern const GeoLayout ship_oars_geo[];
+extern Lights1 ship_oars_OarsSeeThroughPlank2_lights;
+extern Lights1 ship_oars_Sails_layer4_lights;
+extern u8 ship_oars_Planks_rgba16[];
+extern u8 ship_oars_Sail_rgba16[];
+extern Vtx ship_oars_OarsRoot_mesh_layer_1_vtx_0[690];
+extern Gfx ship_oars_OarsRoot_mesh_layer_1_tri_0[];
+extern Vtx ship_oars_OarsRoot_mesh_layer_4_vtx_0[72];
+extern Gfx ship_oars_OarsRoot_mesh_layer_4_tri_0[];
+extern Gfx mat_ship_oars_OarsSeeThroughPlank2[];
+extern Gfx mat_ship_oars_Sails_layer4[];
+extern Gfx mat_revert_ship_oars_Sails_layer4[];
+extern Gfx ship_oars_OarsRoot_mesh_layer_1[];
+extern Gfx ship_oars_OarsRoot_mesh_layer_4[];
+extern Gfx ship_oars_material_revert_render_settings[];

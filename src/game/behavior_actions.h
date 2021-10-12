@@ -565,6 +565,15 @@ void bhv_holy_light_beam_loop(void);
 void bhv_hub_elevator_magic_beam_loop(void);
 
 
+void bhv_load_ship_hull_loop(void);
+void bhv_load_ship_masts_loop(void);
+void bhv_load_ship_oars_loop(void);
+void bhv_load_ship_cannons_loop(void);
+void bhv_load_ship_sails_loop(void);
+
+void bhv_custom_warp_loop(void);
+
+
 Gfx *geo_move_mario_part_from_parent(s32 run, UNUSED struct GraphNode *node, Mat4 mtx);
 
 // Bowser

@@ -59,6 +59,7 @@ const LevelScript level_bob_entry[] = {
 		OBJECT(MODEL_NONE, -1910, 200, 3776, 0, 0, 0, 0x00120000, bhvAirborneWarp),
 		OBJECT(MODEL_YELLOW_COIN, -3184, 0, -3714, 0, 0, 0, 0x00000000, bhvOneCoin),
 		OBJECT(MODEL_GOOMBA, -874, 98, 802, 0, 0, 0, 0x00C0000, bhvGoomba),
+		OBJECT(MODEL_GOOMBA, 203, 396, -956, 0, 0, 0, 0x00000000, bhvStar),
 		OBJECT(MODEL_GOOMBA, 411, 520, 546, 0, 0, 0, 0x01000000, bhvStar),
 		TERRAIN(bob_area_1_collision),
 		MACRO_OBJECTS(bob_area_1_macro_objs),

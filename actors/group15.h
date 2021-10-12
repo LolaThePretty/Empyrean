@@ -197,6 +197,164 @@ extern Gfx mat_revert_hub_elevator_magic_beam_ElevatorRayBeam[];
 extern Gfx hub_elevator_magic_beam_ElevatorRayBeamRoot_mesh_layer_5[];
 extern Gfx hub_elevator_magic_beam_material_revert_render_settings[];
 
+// ship hull
+extern const GeoLayout ship_hull_geo[];
+extern Lights1 ship_hull_BodySides_layer1_lights;
+extern Lights1 ship_hull_BodyPlanks2Big_layer1_lights;
+extern Lights1 ship_hull_BodyPlanks1Big_lights;
+extern Lights1 ship_hull_Gold_lights;
+extern Lights1 ship_hull_CannonsFender_lights;
+extern Lights1 ship_hull_ShipBayGrill_lights;
+extern Lights1 ship_hull_Black_lights;
+extern Lights1 ship_hull_BodyPlanks1_lights;
+extern Lights1 ship_hull_OarsHoles_layer4_lights;
+extern Lights1 ship_hull_Net_layer4_lights;
+extern Lights1 ship_hull_Wheel_layer4_lights;
+extern u8 ship_hull_Bubba_Tongue_rgba16[];
+extern u8 ship_hull_Light_Beam_rgba16[];
+extern u8 ship_hull_Planks_2_V_rgba16[];
+extern u8 ship_hull_Planks_32x32_rgba16[];
+extern u8 ship_hull_Planks_2_rgba16[];
+extern u8 ship_hull_Rock3_rgba16[];
+extern u8 ship_hull_Ship_Grill_Black_i8[];
+extern u8 ship_hull_Planks_rgba16[];
+extern u8 ship_hull_Hole_rgba16[];
+extern u8 ship_hull_Net_rgba16[];
+extern u8 ship_hull_Wheel2_rgba16[];
+extern Vtx ship_hull_HullRoot_mesh_layer_1_vtx_0[140];
+extern Gfx ship_hull_HullRoot_mesh_layer_1_tri_0[];
+extern Vtx ship_hull_HullRoot_mesh_layer_1_vtx_1[282];
+extern Gfx ship_hull_HullRoot_mesh_layer_1_tri_1[];
+extern Vtx ship_hull_HullRoot_mesh_layer_1_vtx_2[254];
+extern Gfx ship_hull_HullRoot_mesh_layer_1_tri_2[];
+extern Vtx ship_hull_HullRoot_mesh_layer_1_vtx_3[56];
+extern Gfx ship_hull_HullRoot_mesh_layer_1_tri_3[];
+extern Vtx ship_hull_HullRoot_mesh_layer_1_vtx_4[468];
+extern Gfx ship_hull_HullRoot_mesh_layer_1_tri_4[];
+extern Vtx ship_hull_HullRoot_mesh_layer_1_vtx_5[10];
+extern Gfx ship_hull_HullRoot_mesh_layer_1_tri_5[];
+extern Vtx ship_hull_HullRoot_mesh_layer_1_vtx_6[20];
+extern Gfx ship_hull_HullRoot_mesh_layer_1_tri_6[];
+extern Vtx ship_hull_HullRoot_mesh_layer_1_vtx_7[36];
+extern Gfx ship_hull_HullRoot_mesh_layer_1_tri_7[];
+extern Vtx ship_hull_HullRoot_mesh_layer_4_vtx_0[24];
+extern Gfx ship_hull_HullRoot_mesh_layer_4_tri_0[];
+extern Vtx ship_hull_HullRoot_mesh_layer_4_vtx_1[4];
+extern Gfx ship_hull_HullRoot_mesh_layer_4_tri_1[];
+extern Vtx ship_hull_HullRoot_mesh_layer_4_vtx_2[6];
+extern Gfx ship_hull_HullRoot_mesh_layer_4_tri_2[];
+extern Gfx mat_ship_hull_BodySides_layer1[];
+extern Gfx mat_revert_ship_hull_BodySides_layer1[];
+extern Gfx mat_ship_hull_BodyPlanks2Big_layer1[];
+extern Gfx mat_revert_ship_hull_BodyPlanks2Big_layer1[];
+extern Gfx mat_ship_hull_BodyPlanks1Big[];
+extern Gfx mat_ship_hull_Gold[];
+extern Gfx mat_ship_hull_CannonsFender[];
+extern Gfx mat_ship_hull_ShipBayGrill[];
+extern Gfx mat_ship_hull_Black[];
+extern Gfx mat_ship_hull_BodyPlanks1[];
+extern Gfx mat_ship_hull_OarsHoles_layer4[];
+extern Gfx mat_revert_ship_hull_OarsHoles_layer4[];
+extern Gfx mat_ship_hull_Net_layer4[];
+extern Gfx mat_revert_ship_hull_Net_layer4[];
+extern Gfx mat_ship_hull_Wheel_layer4[];
+extern Gfx mat_revert_ship_hull_Wheel_layer4[];
+extern Gfx ship_hull_HullRoot_mesh_layer_1[];
+extern Gfx ship_hull_HullRoot_mesh_layer_4[];
+extern Gfx ship_hull_material_revert_render_settings[];
+
+extern const Collision ship_hull_collision[];
+
+// ship masts
+extern const GeoLayout ship_masts_geo[];
+extern Lights1 ship_masts_BodyPlanks1_lights;
+extern Lights1 ship_masts_BodyPlanks2_lights;
+extern Lights1 ship_masts_Fence_layer4_lights;
+extern Lights1 ship_masts_Net_layer4_lights;
+extern Lights1 ship_masts_BlackRopes_layer4_lights;
+extern u8 ship_masts_Planks_rgba16[];
+extern u8 ship_masts_Fence_rgba16[];
+extern u8 ship_masts_Net_rgba16[];
+extern u8 ship_masts_Black_rgba16[];
+extern Vtx ship_masts_MastRoot_mesh_layer_1_vtx_0[827];
+extern Gfx ship_masts_MastRoot_mesh_layer_1_tri_0[];
+extern Vtx ship_masts_MastRoot_mesh_layer_1_vtx_1[58];
+extern Gfx ship_masts_MastRoot_mesh_layer_1_tri_1[];
+extern Vtx ship_masts_MastRoot_mesh_layer_4_vtx_0[24];
+extern Gfx ship_masts_MastRoot_mesh_layer_4_tri_0[];
+extern Vtx ship_masts_MastRoot_mesh_layer_4_vtx_1[8];
+extern Gfx ship_masts_MastRoot_mesh_layer_4_tri_1[];
+extern Vtx ship_masts_MastRoot_mesh_layer_4_vtx_2[37];
+extern Gfx ship_masts_MastRoot_mesh_layer_4_tri_2[];
+extern Gfx mat_ship_masts_BodyPlanks1[];
+extern Gfx mat_ship_masts_BodyPlanks2[];
+extern Gfx mat_ship_masts_Fence_layer4[];
+extern Gfx mat_revert_ship_masts_Fence_layer4[];
+extern Gfx mat_ship_masts_Net_layer4[];
+extern Gfx mat_revert_ship_masts_Net_layer4[];
+extern Gfx mat_ship_masts_BlackRopes_layer4[];
+extern Gfx mat_revert_ship_masts_BlackRopes_layer4[];
+extern Gfx ship_masts_MastRoot_mesh_layer_1[];
+extern Gfx ship_masts_MastRoot_mesh_layer_4[];
+extern Gfx ship_masts_material_revert_render_settings[];
+
+extern const Collision ship_masts_collision[];
+
+// ship oars
+extern const GeoLayout ship_oars_geo[];
+extern Lights1 ship_oars_OarsSeeThroughPlank2_lights;
+extern Lights1 ship_oars_Sails_layer4_lights;
+extern u8 ship_oars_Planks_rgba16[];
+extern u8 ship_oars_Sail_rgba16[];
+extern Vtx ship_oars_OarsRoot_mesh_layer_1_vtx_0[690];
+extern Gfx ship_oars_OarsRoot_mesh_layer_1_tri_0[];
+extern Vtx ship_oars_OarsRoot_mesh_layer_4_vtx_0[72];
+extern Gfx ship_oars_OarsRoot_mesh_layer_4_tri_0[];
+extern Gfx mat_ship_oars_OarsSeeThroughPlank2[];
+extern Gfx mat_ship_oars_Sails_layer4[];
+extern Gfx mat_revert_ship_oars_Sails_layer4[];
+extern Gfx ship_oars_OarsRoot_mesh_layer_1[];
+extern Gfx ship_oars_OarsRoot_mesh_layer_4[];
+extern Gfx ship_oars_material_revert_render_settings[];
+
+extern const Collision ship_oars_collision[];
+
+// ship cannons
+extern const GeoLayout ship_cannons_geo[];
+extern Lights1 ship_cannons_Cannon_lights;
+extern Lights1 ship_cannons_CannonBody_lights;
+extern u8 ship_cannons_Canon_rgba16[];
+extern u8 ship_cannons_CanonBody_rgba16[];
+extern Vtx ship_cannons_CannonsRoot_mesh_layer_1_vtx_0[480];
+extern Gfx ship_cannons_CannonsRoot_mesh_layer_1_tri_0[];
+extern Vtx ship_cannons_CannonsRoot_mesh_layer_1_vtx_1[960];
+extern Gfx ship_cannons_CannonsRoot_mesh_layer_1_tri_1[];
+extern Gfx mat_ship_cannons_Cannon[];
+extern Gfx mat_ship_cannons_CannonBody[];
+extern Gfx ship_cannons_CannonsRoot_mesh_layer_1[];
+extern Gfx ship_cannons_material_revert_render_settings[];
+
+extern const Collision ship_cannons_collision[];
+
+// ship sails
+extern const GeoLayout ship_sails_geo[];
+extern Lights1 ship_sails_Sails_layer4_lights;
+extern Lights1 ship_sails_BlackRopes_layer4_lights;
+extern u8 ship_sails_Sail_rgba16[];
+extern u8 ship_sails_Black_rgba16[];
+extern Vtx ship_sails_SailRoot_mesh_layer_4_vtx_0[84];
+extern Gfx ship_sails_SailRoot_mesh_layer_4_tri_0[];
+extern Vtx ship_sails_SailRoot_mesh_layer_4_vtx_1[10];
+extern Gfx ship_sails_SailRoot_mesh_layer_4_tri_1[];
+extern Gfx mat_ship_sails_Sails_layer4[];
+extern Gfx mat_revert_ship_sails_Sails_layer4[];
+extern Gfx mat_ship_sails_BlackRopes_layer4[];
+extern Gfx mat_revert_ship_sails_BlackRopes_layer4[];
+extern Gfx ship_sails_SailRoot_mesh_layer_4[];
+extern Gfx ship_sails_material_revert_render_settings[];
+
+extern const Collision ship_sails_collision[];
+
 #include "hub_elevator/geo_header.h"
 
 #include "hub_elevator/collision_header.h"

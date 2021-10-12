@@ -562,16 +562,16 @@ void render_hud(void) {
     #ifndef DISABLE_LIVES
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_LIVES) {
             render_hud_mario_lives();
-            // V CUSTOM V
-
-            if (HUBelevatorMove == 1.0f) {
-                display_hub_elevator_arrows();
-            }
         }
     #endif
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_COIN_COUNT  ) render_hud_coins();
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_STAR_COUNT  ) render_hud_stars();
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_KEYS        ) render_hud_keys();
+        // V CUSTOM V
+
+        if (HUBelevatorMove == 1.0f) {
+            display_hub_elevator_arrows();
+        }
 #ifdef BREATH_METER
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_BREATH_METER) render_hud_breath_meter();
 #endif

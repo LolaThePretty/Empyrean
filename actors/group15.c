@@ -47,3 +47,23 @@ UNUSED static const u64 binid_9 = 9;
 
 #include "hub_elevator_magic_beam/model.inc.c"
 UNUSED static const u64 binid_10 = 10;
+
+#include "ship_hull/model.inc.c"
+#include "ship_hull/collision.inc.c"
+UNUSED static const u64 binid_11 = 11;
+
+#include "ship_masts/model.inc.c"
+#include "ship_masts/collision.inc.c"
+UNUSED static const u64 binid_12 = 12;
+
+#include "ship_oars/model.inc.c"
+#include "ship_oars/collision.inc.c"
+UNUSED static const u64 binid_13 = 13;
+
+#include "ship_cannons/model.inc.c"
+#include "ship_cannons/collision.inc.c"
+UNUSED static const u64 binid_14 = 14;
+
+#include "ship_sails/model.inc.c"
+#include "ship_sails/collision.inc.c"
+UNUSED static const u64 binid_15 = 15;

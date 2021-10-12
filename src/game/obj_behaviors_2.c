@@ -916,6 +916,14 @@ static void treat_far_home_as_mario(f32 threshold) {
 #include "behaviors/rainbow_magic_orb.inc.c"
 #include "behaviors/rainbow_magic_platform.inc.c"
 
+#include "behaviors/spawn_hub_ship_hull.inc.c"
+#include "behaviors/spawn_hub_ship_masts.inc.c"
+#include "behaviors/spawn_hub_ship_oars.inc.c"
+#include "behaviors/spawn_hub_ship_cannons.inc.c"
+#include "behaviors/spawn_hub_ship_sails.inc.c"
+
+#include "behaviors/hub_custom_warp.inc.c"
+
 
 /**
  * Used by bowser, fly guy, piranha plant, and fire spitters.

@@ -5966,3 +5966,70 @@ const BehaviorScript bhvHubElevatorMagicBeam[] = {
         CALL_NATIVE(bhv_hub_elevator_magic_beam_loop),
     END_LOOP(),
 };
+
+//! ////////////////////////////////////////////////////////////////////////////
+//! ////////////////////////////////////////////////////////////////////////////
+//! V HUB SHIP V
+
+const BehaviorScript bhvLoadHubShipHull[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(ship_hull_collision),
+    OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_UCODE_LARGE)),
+    SET_FLOAT(oDrawingDistance, 20000),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_load_ship_hull_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvLoadHubShipMasts[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(ship_masts_collision),
+    OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_UCODE_LARGE)),
+    SET_FLOAT(oDrawingDistance, 20000),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_load_ship_masts_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvLoadHubShipOars[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(ship_oars_collision),
+    OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_UCODE_LARGE)),
+    SET_FLOAT(oDrawingDistance, 20000),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_load_ship_oars_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvLoadHubShipCannons[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    //LOAD_COLLISION_DATA(ship_cannons_collision),
+    OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_UCODE_LARGE)),
+    SET_FLOAT(oDrawingDistance, 20000),
+    //SET_FLOAT(oCollisionDistance, 1),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_load_ship_cannons_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvLoadHubShipSails[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    LOAD_COLLISION_DATA(ship_sails_collision),
+    OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_UCODE_LARGE)),
+    SET_FLOAT(oDrawingDistance, 20000),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_load_ship_sails_loop),
+    END_LOOP(),
+};
+
+//! ^ HUB SHIP ^
+//! ////////////////////////////////////////////////////////////////////////////
+//! ////////////////////////////////////////////////////////////////////////////
+
+const BehaviorScript bhvHubCustomWarp[] = {
+    BEGIN(OBJ_LIST_LEVEL),
+    OR_INT(oFlags, (OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_custom_warp_loop),
+    END_LOOP(),
+};

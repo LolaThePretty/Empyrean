@@ -1,0 +1,13 @@
+extern const GeoLayout ship_cannons_geo[];
+extern Lights1 ship_cannons_Cannon_lights;
+extern Lights1 ship_cannons_CannonBody_lights;
+extern u8 ship_cannons_Canon_rgba16[];
+extern u8 ship_cannons_CanonBody_rgba16[];
+extern Vtx ship_cannons_CannonsRoot_mesh_layer_1_vtx_0[480];
+extern Gfx ship_cannons_CannonsRoot_mesh_layer_1_tri_0[];
+extern Vtx ship_cannons_CannonsRoot_mesh_layer_1_vtx_1[960];
+extern Gfx ship_cannons_CannonsRoot_mesh_layer_1_tri_1[];
+extern Gfx mat_ship_cannons_Cannon[];
+extern Gfx mat_ship_cannons_CannonBody[];
+extern Gfx ship_cannons_CannonsRoot_mesh_layer_1[];
+extern Gfx ship_cannons_material_revert_render_settings[];

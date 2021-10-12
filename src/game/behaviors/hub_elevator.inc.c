@@ -19,12 +19,10 @@ extern f32 numberOfStarsCollected;
 
 void bhv_hub_elevator_loop() {
 
-    (o->activeFlags & ACTIVE_FLAG_ACTIVE);
-
     if (numberOfStarsCollected > 2) {
         hub_elevator_enabled();
     } else if (numberOfStarsCollected < 3) {
-        obj_mark_for_deletion(o);
+        //! Do Nothing
     }
     
 }
@@ -55,11 +53,11 @@ void bhv_hub_elevator_can_move() {
     if (HUBelevatorMove == 1.0f) {
         if (HUBelevatorGoesUp == 1.0f) {
             cur_obj_play_sound_2(SOUND_GENERAL_MOVING_PLATFORM_SWITCH);
-            if (o->oPosY < 4560.0f) {
+            if (o->oPosY < 5360.0f) {
                 o->oPosY += 20.0f;
             }
-            if (o->oPosY > 4560.0f) {
-                o->oPosY = 4560.0f;
+            if (o->oPosY > 5360.0f) {
+                o->oPosY = 5360.0f;
                 HUBelevatorIsUp = 1.0f;
                 HUBelevatorIsDown = 0.0f;
                 HUBelevatorGoesUp = 0.0f;
@@ -75,11 +73,11 @@ void bhv_hub_elevator_can_move() {
     if (HUBelevatorMove == 1.0f) {
         if (HUBelevatorGoesDown == 1.0f) {
             cur_obj_play_sound_2(SOUND_GENERAL_MOVING_PLATFORM_SWITCH);
-                if (o->oPosY > -150.0f) {
+                if (o->oPosY > 650.0f) {
                     o->oPosY -= 20.0f;
                 }
-                if (o->oPosY < -150.0f) {
-                    o->oPosY = -150.0f;
+                if (o->oPosY < 650.0f) {
+                    o->oPosY = 650.0f;
                     HUBelevatorIsUp = 0.0f;
                     HUBelevatorIsDown = 1.0f;
                     HUBelevatorGoesDown = 0.0f;
@@ -91,12 +89,12 @@ void bhv_hub_elevator_can_move() {
 
 void bhv_hub_elevator_reset() {
     if (HUBelevatorReset == 1.0f) {
-        if (o->oPosY > -150.0f) {
+        if (o->oPosY > 650.0f) {
             o->oPosY -= 20.0f;
         }
 
-        if (o->oPosY <= -150.0f) {
-            o->oPosY = -150.0f;
+        if (o->oPosY <= 650.0f) {
+            o->oPosY = 650.0f;
 
             HUBelevatorIsUp = 0.0f;
             HUBelevatorGoesUp = 0.0f;

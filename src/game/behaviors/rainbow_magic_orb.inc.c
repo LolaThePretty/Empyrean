@@ -38,8 +38,5 @@ void bhv_rainbow_magic_orb_loop(void) {
     } else {
         o->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_RAINBOW_MAGIC_PLATFORM];
     }
-    
-    
-    
 
 }

@@ -435,8 +435,13 @@
 #define MODEL_SHIP_WRECK                  0x68        // ship_wreck_geo
 #define MODEL_RAINBOW_MAGIC_ORB           0x69        // rainbow_magic_orb_geo
 #define MODEL_RAINBOW_MAGIC_PLATFORM      0x6A        // rainbow_magic_platform_geo
-#define MODEL_HOLY_LIGHT_BEAM             0x6B        // rainbow_magic_platform_geo
-#define MODEL_HUB_ELEVATOR_MAGIC_BEAM     0x6C        // rainbow_magic_platform_geo
+#define MODEL_HOLY_LIGHT_BEAM             0x6B        // holy_light_beam_geo
+#define MODEL_HUB_ELEVATOR_MAGIC_BEAM     0x6C        // hub_elevator_geo
+#define MODEL_SHIP_HULL                   0x6D        // ship_hull_geo
+#define MODEL_SHIP_MASTS                  0x6E        // ship_masts_geo
+#define MODEL_SHIP_OARS                   0x6F        // ship_oars_geo
+#define MODEL_SHIP_CANNONS                0x70        // ship_cannons_geo
+#define MODEL_SHIP_SAILS                  0x71        // ship_sails_geo
 
 // group 16
 #define MODEL_MONEYBAG                    0x66        // moneybag_geo

@@ -224,6 +224,8 @@ void clear_area_graph_nodes(void) {
     }
 }
 
+extern f32 SpawnCavernWarp;
+
 void load_area(s32 index) {
     if (gCurrentArea == NULL && gAreaData[index].graphNode != NULL) {
         gCurrentArea = &gAreaData[index];
@@ -240,6 +242,11 @@ void load_area(s32 index) {
 
         load_obj_warp_nodes();
         geo_call_global_function_nodes(&gCurrentArea->graphNode->node, GEO_CONTEXT_AREA_LOAD);
+
+        // V CUSTOM V
+
+        SpawnCavernWarp = 1.0f;
+        
     }
 }
 

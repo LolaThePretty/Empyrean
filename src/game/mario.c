@@ -50,6 +50,8 @@ f32 RainbowMagicBool = 0.0f;
 
 //extern f32 HubRescueCutscene;
 
+f32 isBooVanish = 0.0f;
+
 /**************************************************
  *                    ANIMATIONS                  *
  **************************************************/
@@ -1753,6 +1755,16 @@ void mario_update_hitbox_and_cap_model(struct MarioState *m) {
     if (HubRescueCutscene == 1.0f) {
         PlayHubRescueCutscene();
     }*/
+
+    /*if ((gPlayer1Controller->buttonPressed & L_TRIG) && (isBooVanish == 0.0f)) {
+        gMarioState->flags = (MARIO_VANISH_CAP | MARIO_CAP_ON_HEAD);
+        isBooVanish = 1.0f;
+    } else if ((gPlayer1Controller->buttonPressed & L_TRIG) && (isBooVanish == 1.0f)) {
+        gMarioState->flags = (MARIO_NORMAL_CAP | MARIO_CAP_ON_HEAD);
+        isBooVanish = 0.0f;
+    }*/
+    //!ABOVE IS CODE TO HELP A FRIEND IN HIS PROJECT BUT THIS CAN ALSO BE USED FOR INVISIBLE MAGIC ! :D
+
 
 }
 

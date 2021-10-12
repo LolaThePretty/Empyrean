@@ -1,0 +1,15 @@
+extern const GeoLayout ship_sails_geo[];
+extern Lights1 ship_sails_Sails_layer4_lights;
+extern Lights1 ship_sails_BlackRopes_layer4_lights;
+extern u8 ship_sails_Sail_rgba16[];
+extern u8 ship_sails_Black_rgba16[];
+extern Vtx ship_sails_SailRoot_mesh_layer_4_vtx_0[84];
+extern Gfx ship_sails_SailRoot_mesh_layer_4_tri_0[];
+extern Vtx ship_sails_SailRoot_mesh_layer_4_vtx_1[10];
+extern Gfx ship_sails_SailRoot_mesh_layer_4_tri_1[];
+extern Gfx mat_ship_sails_Sails_layer4[];
+extern Gfx mat_revert_ship_sails_Sails_layer4[];
+extern Gfx mat_ship_sails_BlackRopes_layer4[];
+extern Gfx mat_revert_ship_sails_BlackRopes_layer4[];
+extern Gfx ship_sails_SailRoot_mesh_layer_4[];
+extern Gfx ship_sails_material_revert_render_settings[];

@@ -444,7 +444,7 @@ void init_mario_after_warp(void) {
 #endif
 
         if (sWarpDest.levelNum == LEVEL_CASTLE && sWarpDest.areaIdx == 1 && (sWarpDest.nodeId == 31 || sWarpDest.nodeId == 32))
-            play_sound(SOUND_MENU_MARIO_CASTLE_WARP, gGlobalSoundSource);
+            play_sound(SOUND_MENU_MARIO_CASTLE_WARP, gGlobalSoundSource); //Interesting
 #ifndef VERSION_JP
         if (sWarpDest.levelNum == LEVEL_CASTLE_GROUNDS && sWarpDest.areaIdx == 1
             && (sWarpDest.nodeId == 7 || sWarpDest.nodeId == 10 || sWarpDest.nodeId == 20

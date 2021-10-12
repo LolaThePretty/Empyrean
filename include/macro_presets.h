@@ -378,7 +378,12 @@ struct MacroPreset MacroObjectPresets[] = {
     {bhvShipWreck, MODEL_SHIP_WRECK, 0},
     {bhvRainbowMagicOrb, MODEL_RAINBOW_MAGIC_ORB, 0},
     {bhvHolyLightBeam, MODEL_HOLY_LIGHT_BEAM, 0},
-    {bhvHubElevatorMagicBeam, MODEL_HUB_ELEVATOR_MAGIC_BEAM, 0}
+    {bhvHubElevatorMagicBeam, MODEL_HUB_ELEVATOR_MAGIC_BEAM, 0},
+    {bhvLoadHubShipHull, MODEL_SHIP_HULL, 0},
+    {bhvLoadHubShipMasts, MODEL_SHIP_MASTS, 0},
+    {bhvLoadHubShipOars, MODEL_SHIP_OARS, 0},
+    {bhvLoadHubShipCannons, MODEL_SHIP_CANNONS, 0},
+    {bhvLoadHubShipSails, MODEL_SHIP_SAILS, 0}
 };
 
 #endif // MACRO_PRESETS_H

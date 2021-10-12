@@ -26,6 +26,15 @@ void vec3f_copy(Vec3f dest, Vec3f src) {
     ((u32 *) dest)[2] = ((u32 *) src)[2];
 }
 
+/*void vec3f_copy(Vec3f dest, Vec3f src) {
+    register x = ((u32 *) src)[0];
+    register y = ((u32 *) src)[1];
+    register z = ((u32 *) src)[2];
+    ((u32 *) dest)[0] = x;
+    ((u32 *) dest)[1] = y;
+    ((u32 *) dest)[2] = z;
+}*/
+
 /// Set vector 'dest' to (x, y, z)
 void vec3f_set(Vec3f dest, f32 x, f32 y, f32 z) {
     vec3_set(dest, x, y, z);

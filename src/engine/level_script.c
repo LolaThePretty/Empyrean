@@ -259,6 +259,13 @@ static void level_cmd_call_loop(void) {
 static void level_cmd_set_register(void) {
     sRegister = CMD_GET(s16, 2);
     sCurrentCmd = CMD_NEXT;
+
+    if (save_file_get_total_star_count(gCurrSaveFileNum - 1, COURSE_MIN - 1, COURSE_MAX - 1) > 0) {
+        sRegister = LEVEL_CASTLE;
+    } else {
+        sRegister = LEVEL_CASTLE; //! TUTORIAL LEVEL HERE LEVEL_PSS
+    }
+
 }
 
 static void level_cmd_push_pool_state(void) {

@@ -17,3 +17,8 @@
 #include "rainbow_magic_platform/geo.inc.c"
 #include "holy_light_beam/geo.inc.c"
 #include "hub_elevator_magic_beam/geo.inc.c"
+#include "ship_hull/geo.inc.c"
+#include "ship_masts/geo.inc.c"
+#include "ship_oars/geo.inc.c"
+#include "ship_cannons/geo.inc.c"
+#include "ship_sails/geo.inc.c"

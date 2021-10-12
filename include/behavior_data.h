@@ -535,4 +535,12 @@ extern const BehaviorScript bhvRainbowMagicOrb[];
 extern const BehaviorScript bhvRainbowMagicPlatform[];
 extern const BehaviorScript bhvLevel4Barrier[];
 
+extern const BehaviorScript bhvLoadHubShipHull[];
+extern const BehaviorScript bhvLoadHubShipMasts[];
+extern const BehaviorScript bhvLoadHubShipOars[];
+extern const BehaviorScript bhvLoadHubShipCannons[];
+extern const BehaviorScript bhvLoadHubShipSails[];
+
+extern const BehaviorScript bhvHubCustomWarp[];
+
 #endif // BEHAVIOR_DATA_H
