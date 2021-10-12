@@ -66,7 +66,7 @@
 // 1 is similar to vanilla, but prevents Mario from moving in the wrong direction, and allows finer control with the analog stick.
 // 2 is similar to mode 1, but a bit further from vanilla, and allows instant turnaround if Mario is moving slower than a certain threshold.
 // 3 is instant turning to the intended direction regardless of speed and angle.
-#define GROUND_TURN_MODE 0
+#define GROUND_TURN_MODE 2
 // Improved hanging:
 // - Doesn't require holding down the A button
 // - Percise turning control ()
@@ -198,7 +198,7 @@
 //#define PUPPYPRINT_DEBUG_CYCLES
 // Visual debug enables some collision visuals. Tapping Right on the dpad will cycle between visual hitboxes, visual surfaces, both, and neither.
 // If puppyprint is enabled, then this can be cycled only while the screen is active.
-//#define VISUAL_DEBUG
+#define VISUAL_DEBUG
 // Open all courses and doors. Used for debugging purposes to unlock all content.
 //#define UNLOCK_ALL
 

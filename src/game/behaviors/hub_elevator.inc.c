@@ -18,6 +18,9 @@ extern f32 numberOfStarsCollected;
 //f32 shouldDisplayHUBelevatorArrows = 0.0f;
 
 void bhv_hub_elevator_loop() {
+
+    (o->activeFlags & ACTIVE_FLAG_ACTIVE);
+
     if (numberOfStarsCollected > 2) {
         hub_elevator_enabled();
     } else if (numberOfStarsCollected < 3) {
@@ -27,8 +30,6 @@ void bhv_hub_elevator_loop() {
 }
 
 void hub_elevator_enabled() {
-
-    o->activeFlags = ACTIVE_FLAG_ACTIVE;
 
     if ((o->oDistanceToMario < 1500.0f) && (HUBelevatorReset == 0.0f)) {
         bhv_hub_elevator_can_move();
