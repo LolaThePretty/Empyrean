@@ -341,15 +341,15 @@ ALIGNED8 static const Texture texture_credits_char_period[] = {
 
 Gfx render_hud_up_arrow_act_texture_aligner[] = {gsSPEndDisplayList()};
 u8 render_hud_up_arrow_act_texture[] = {
-	#include "textures/segment2/elevator_arrow_act_up.rgba16.inc.c"
+	#include "textures/segment2/custom_elevator_arrow_act_up.rgba16.inc.c"
 };
 
 u8 render_hud_rainbow_magic_gauge_texture[] = {
-	#include "textures/segment2/rainbow_magic_gauge.rgba16.inc.c"
+	#include "textures/segment2/custom_rainbow_magic_gauge.rgba16.inc.c"
 };
 
 u8 render_hud_rainbow_magic_gauge_pointer_texture[] = {
-	#include "textures/segment2/rainbow_magic_gauge_pointer.rgba16.inc.c"
+	#include "textures/segment2/custom_rainbow_magic_gauge_pointer.rgba16.inc.c"
 };
 
 // JP Small Font
